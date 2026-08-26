@@ -2,7 +2,7 @@ name: Sync fra realfag
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 permissions:
   contents: write
 jobs:
