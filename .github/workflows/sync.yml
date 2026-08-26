@@ -1,11 +1,66 @@
-name: Sync fra realfag
+name: Bygg live fra realfag
+
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
 permissions:
   contents: write
+
 jobs:
-  sync:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Live er preview-appen
-        run: echo "matsamundsen.github.io serverer nå TanStack-previewen. Vanilla-synk er slått av."
+      - name: Checkout live
+        uses: actions/checkout@v4
+        with:
+          path: live
+
+      - name: Checkout kilde
+        uses: actions/checkout@v4
+        with:
+          repository: MatsAmundsen/realfag
+          path: src-app
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: src-app/package-lock.json
+
+      - name: Bygg TanStack-appen
+        working-directory: src-app
+        run: |
+          npm ci
+          if [ -f index.html ]; then mv index.html index.vanilla.html; fi
+          set +e
+          npm run build:pages
+          set -e
+          test -f .output/public/index.html
+          grep -q "hero-wrap" .output/public/index.html
+          grep -q "mg-build" .output/public/index.html
+
+      - name: Publiser til github.io
+        run: |
+          rsync -a --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '__grok/' \
+            src-app/.output/public/ live/
+          cp -f live/index.html live/404.html
+          touch live/.nojekyll
+          mkdir -p live/realfag
+          if [ ! -f live/realfag/index.html ]; then
+            printf '%s\n' '<!DOCTYPE html><meta http-equiv="refresh" content="0;url=/"><script>location.replace("/")</script>' > live/realfag/index.html
+          fi
+          cd live
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Ingen endringer"
+            exit 0
+          fi
+          git commit -m "Deploy Matteguiden fra realfag $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
