@@ -38,5 +38,6 @@ jobs:
             echo "Ingen endringer"
           else
             git commit -m "Sync Matteguiden fra realfag"
+            git pull --rebase origin main || true
             git push
           fi
