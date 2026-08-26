@@ -31,4 +31,1072 @@ maaneder = 0
 student = True
 # Beregn pris`},{id:`P.15`,tittel:`Oppgave P.15 — Tekst: gangetabell med merkelapper`,tekst:`Du skal lage en oversikt over $7$-gangen fra $1$ til $12$.<br><br><strong>Skriv et program</strong> som for hvert tall $k$ fra $1$ til $12$:<br>- regner ut <code>produkt = 7 * k</code><br>- skriver ut <code>k x 7 = produkt</code><br>- <strong>i tillegg:</strong> hvis produktet er delelig med $10$, skriv <code> (delelig med 10)</code> på samme linje<br><br>Eksempel på to linjer:<br><pre class="prog-code"><code>1 x 7 = 7<br>...<br>10 x 7 = 70 (delelig med 10)</code></pre>`,bilde:null,hint:`Bruk <code>for k in range(1, 13)</code>. Sjekk <code>produkt % 10 == 0</code>. Du kan bygge linjen i en variabel før <code>print</code>.`,fasit:`<pre class="prog-code"><code>for k in range(1, 13):<br>    produkt = 7 * k<br>    linje = f"{k} x 7 = {produkt}"<br>    if produkt % 10 == 0:<br>        linje = linje + " (delelig med 10)"<br>    print(linje)</code></pre><br><br>Linjene for $k=10$ (<code>70</code>) treffer merkelappen.<br><br><strong>Svar:</strong> <code>for</code>-løkke + <code>if</code> med modulo $10$, og <code>print</code> av den ferdige linjen.`,fasitSteg:null,starter:`for k in range(1, 13):
     produkt = 7 * k
-    print(produkt)`}];function r(e,t,n,r){return{id:e,tittel:`Oppgave ${e}`,tekst:t,bilde:null,hint:n,fasit:null,fasitSteg:r,starter:``}}var i={"1C":[r(`1.46`,`Start med det grunnleggende.<br><br><strong>a)</strong> Skriv som brøk: tre av åtte kakestykker.<br><br><strong>b)</strong> I brøken $\\dfrac{5}{6}$ — hva er telleren, og hva er nevneren?<br><br><strong>c)</strong> Er $\\dfrac{3}{7}$ en ekte eller uekte brøk? Begrunn med én setning.`,`Telleren står oppe, nevneren nede. Ekte brøk: teller mindre enn nevner.`,[`<strong>a)</strong> Tre av åtte skrives $\\dfrac{3}{8}$.<br><strong>Svar:</strong> $\\dfrac{3}{8}$`,`<strong>b)</strong> Telleren er $5$, nevneren er $6$.<br><strong>Svar:</strong> teller $5$, nevner $6$`,`<strong>c)</strong> $3<7$, så brøken er ekte.<br><strong>Svar:</strong> ekte brøk`]),r(`1.47`,`Utvid og se at verdien er den samme.<br><br><strong>a)</strong> Utvid $\\dfrac{1}{2}$ slik at nevneren blir $8$.<br><br><strong>b)</strong> Utvid $\\dfrac{2}{3}$ slik at nevneren blir $12$.<br><br><strong>c)</strong> Er $\\dfrac{2}{4}$ og $\\dfrac{1}{2}$ like store? Vis ved å utvide eller forkorte.`,`Gang teller og nevner med samme tall. Verdien endres ikke.`,[`<strong>a)</strong> Gang med $4$: $\\dfrac{1\\cdot 4}{2\\cdot 4}=\\dfrac{4}{8}$.<br><strong>Svar:</strong> $\\dfrac{4}{8}$`,`<strong>b)</strong> Gang med $4$: $\\dfrac{2\\cdot 4}{3\\cdot 4}=\\dfrac{8}{12}$.<br><strong>Svar:</strong> $\\dfrac{8}{12}$`,`<strong>c)</strong> $\\dfrac{2}{4}=\\dfrac{2\\div 2}{4\\div 2}=\\dfrac{1}{2}$. Ja, de er like.<br><strong>Svar:</strong> ja, begge er $\\dfrac{1}{2}$`]),r(`1.48`,`Forkort så langt det går.<br><br><strong>a)</strong> $\\dfrac{4}{8}$<br><br><strong>b)</strong> $\\dfrac{9}{12}$<br><br><strong>c)</strong> $\\dfrac{15}{25}$`,`Del teller og nevner med største felles faktor (SFF).`,[`<strong>a)</strong> SFF$(4,8)=4$, så $\\dfrac{4}{8}=\\dfrac{1}{2}$.<br><strong>Svar:</strong> $\\dfrac{1}{2}$`,`<strong>b)</strong> SFF$(9,12)=3$, så $\\dfrac{9}{12}=\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{3}{4}$`,`<strong>c)</strong> SFF$(15,25)=5$, så $\\dfrac{15}{25}=\\dfrac{3}{5}$.<br><strong>Svar:</strong> $\\dfrac{3}{5}$`]),r(`1.49`,`Samme nevner — da er det bare å plusse eller trekke tellerne.<br><br><strong>a)</strong> $\\dfrac{2}{7}+\\dfrac{3}{7}$<br><br><strong>b)</strong> $\\dfrac{5}{6}-\\dfrac{1}{6}$<br><br><strong>c)</strong> $\\dfrac{3}{10}+\\dfrac{4}{10}+\\dfrac{1}{10}$`,`Behold nevneren. Forkort svaret hvis du kan.`,[`<strong>a)</strong> $\\dfrac{2+3}{7}=\\dfrac{5}{7}$.<br><strong>Svar:</strong> $\\dfrac{5}{7}$`,`<strong>b)</strong> $\\dfrac{5-1}{6}=\\dfrac{4}{6}=\\dfrac{2}{3}$.<br><strong>Svar:</strong> $\\dfrac{2}{3}$`,`<strong>c)</strong> $\\dfrac{3+4+1}{10}=\\dfrac{8}{10}=\\dfrac{4}{5}$.<br><strong>Svar:</strong> $\\dfrac{4}{5}$`]),r(`1.50`,`Ulik nevner. Finn fellesnevner først.<br><br><strong>a)</strong> $\\dfrac{1}{2}+\\dfrac{1}{4}$<br><br><strong>b)</strong> $\\dfrac{1}{3}+\\dfrac{1}{6}$<br><br><strong>c)</strong> $\\dfrac{3}{4}-\\dfrac{1}{2}$`,`Den minste fellesnevneren er ofte det største av de to nevnerne når den ene går opp i den andre.`,[`<strong>a)</strong> Fellesnevner $4$: $\\dfrac{2}{4}+\\dfrac{1}{4}=\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{3}{4}$`,`<strong>b)</strong> Fellesnevner $6$: $\\dfrac{2}{6}+\\dfrac{1}{6}=\\dfrac{3}{6}=\\dfrac{1}{2}$.<br><strong>Svar:</strong> $\\dfrac{1}{2}$`,`<strong>c)</strong> Fellesnevner $4$: $\\dfrac{3}{4}-\\dfrac{2}{4}=\\dfrac{1}{4}$.<br><strong>Svar:</strong> $\\dfrac{1}{4}$`]),r(`1.51`,`Ganging av brøker: teller med teller, nevner med nevner.<br><br><strong>a)</strong> $\\dfrac{2}{3}\\cdot\\dfrac{3}{4}$<br><br><strong>b)</strong> $5\\cdot\\dfrac{2}{5}$<br><br><strong>c)</strong> $\\dfrac{1}{2}\\cdot\\dfrac{1}{3}$`,`Du kan forkorte på kryss før du ganger, hvis du vil.`,[`<strong>a)</strong> $\\dfrac{2\\cdot 3}{3\\cdot 4}=\\dfrac{6}{12}=\\dfrac{1}{2}$. (Eller stryk $3$: $\\dfrac{2}{4}=\\dfrac{1}{2}$.)<br><strong>Svar:</strong> $\\dfrac{1}{2}$`,`<strong>b)</strong> $5=\\dfrac{5}{1}$, så $\\dfrac{5\\cdot 2}{1\\cdot 5}=\\dfrac{10}{5}=2$.<br><strong>Svar:</strong> $2$`,`<strong>c)</strong> $\\dfrac{1\\cdot 1}{2\\cdot 3}=\\dfrac{1}{6}$.<br><strong>Svar:</strong> $\\dfrac{1}{6}$`]),r(`1.52`,`Å dele på en brøk er det samme som å gange med den omvendte.<br><br><strong>a)</strong> $\\dfrac{3}{4}:\\dfrac{1}{2}$<br><br><strong>b)</strong> $\\dfrac{2}{5}:\\dfrac{4}{15}$<br><br><strong>c)</strong> $6:\\dfrac{2}{3}$`,`Snu den bakerste brøken og gang. $6=\\dfrac{6}{1}$.`,[`<strong>a)</strong> $\\dfrac{3}{4}\\cdot\\dfrac{2}{1}=\\dfrac{6}{4}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`,`<strong>b)</strong> $\\dfrac{2}{5}\\cdot\\dfrac{15}{4}=\\dfrac{2\\cdot 15}{5\\cdot 4}=\\dfrac{30}{20}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`,`<strong>c)</strong> $\\dfrac{6}{1}\\cdot\\dfrac{3}{2}=\\dfrac{18}{2}=9$.<br><strong>Svar:</strong> $9$`]),r(`1.53`,`Blandede tall. Skriv om til uekte brøk først.<br><br><strong>a)</strong> Skriv $1\\dfrac{1}{2}$ som uekte brøk.<br><br><strong>b)</strong> $1\\dfrac{1}{2}+2\\dfrac{1}{4}$<br><br><strong>c)</strong> $2\\dfrac{1}{3}-\\dfrac{5}{6}$`,`$1\\dfrac{1}{2}=\\dfrac{3}{2}$. Finn fellesnevner etterpå.`,[`<strong>a)</strong> $1\\dfrac{1}{2}=\\dfrac{2}{2}+\\dfrac{1}{2}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`,`<strong>b)</strong> $\\dfrac{3}{2}+\\dfrac{9}{4}$. Fellesnevner $4$: $\\dfrac{6}{4}+\\dfrac{9}{4}=\\dfrac{15}{4}=3\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{15}{4}$`,`<strong>c)</strong> $2\\dfrac{1}{3}=\\dfrac{7}{3}$. Fellesnevner $6$: $\\dfrac{14}{6}-\\dfrac{5}{6}=\\dfrac{9}{6}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`]),r(`1C-E1`,`Hvilken brøk er størst? Utvide til fellesnevner og sammenlign tellerne.<br><br><strong>a)</strong> $\\dfrac{2}{3}$ eller $\\dfrac{3}{5}$<br><br><strong>b)</strong> $\\dfrac{5}{8}$ eller $\\dfrac{7}{12}$<br><br><strong>c)</strong> Sett i stigende rekkefølge: $\\dfrac{1}{2}$, $\\dfrac{2}{5}$, $\\dfrac{3}{4}$`,`Fellesnevner. Størst teller vinner når nevneren er lik.`,[`<strong>a)</strong> Fellesnevner $15$: $\\dfrac{10}{15}$ mot $\\dfrac{9}{15}$.<br><strong>Svar:</strong> $\\dfrac{2}{3}$ er størst`,`<strong>b)</strong> Fellesnevner $24$: $\\dfrac{15}{24}$ mot $\\dfrac{14}{24}$.<br><strong>Svar:</strong> $\\dfrac{5}{8}$ er størst`,`<strong>c)</strong> Fellesnevner $20$: $\\dfrac{10}{20}$, $\\dfrac{8}{20}$, $\\dfrac{15}{20}$.<br><strong>Svar:</strong> $\\dfrac{2}{5}<\\dfrac{1}{2}<\\dfrac{3}{4}$`]),r(`1C-E2`,`Regnerekkefølge: ganging før pluss, med mindre parentes sier noe annet.<br><br><strong>a)</strong> $\\dfrac{1}{2}+\\dfrac{1}{3}\\cdot\\dfrac{3}{4}$<br><br><strong>b)</strong> $\\left(\\dfrac{1}{2}+\\dfrac{1}{3}\\right)\\cdot\\dfrac{3}{4}$<br><br><strong>c)</strong> $1-\\dfrac{1}{2}\\cdot\\dfrac{2}{5}$`,`I a) ganger du først. I b) parentes først.`,[`<strong>a)</strong> $\\dfrac{1}{3}\\cdot\\dfrac{3}{4}=\\dfrac{1}{4}$. Så $\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{3}{4}$`,`<strong>b)</strong> $\\dfrac{1}{2}+\\dfrac{1}{3}=\\dfrac{5}{6}$. Så $\\dfrac{5}{6}\\cdot\\dfrac{3}{4}=\\dfrac{15}{24}=\\dfrac{5}{8}$.<br><strong>Svar:</strong> $\\dfrac{5}{8}$`,`<strong>c)</strong> $\\dfrac{1}{2}\\cdot\\dfrac{2}{5}=\\dfrac{1}{5}$. Så $1-\\dfrac{1}{5}=\\dfrac{4}{5}$.<br><strong>Svar:</strong> $\\dfrac{4}{5}$`]),r(`1C-E3`,`En pizza er delt i $8$ like store stykker. Kari spiser $3$ stykker, og Ola spiser $2$.<br><br><strong>a)</strong> Hvilken brøkdel av pizzaen er spist?<br><br><strong>b)</strong> Hvilken brøkdel er igjen?<br><br><strong>c)</strong> Hvis pizzaen veier $640$ g, hvor mange gram er igjen?`,`Spist = summen av stykkene. Igjen = $1$ minus spist.`,[`<strong>a)</strong> $\\dfrac{3}{8}+\\dfrac{2}{8}=\\dfrac{5}{8}$.<br><strong>Svar:</strong> $\\dfrac{5}{8}$`,`<strong>b)</strong> $1-\\dfrac{5}{8}=\\dfrac{3}{8}$.<br><strong>Svar:</strong> $\\dfrac{3}{8}$`,`<strong>c)</strong> $\\dfrac{3}{8}\\cdot 640=3\\cdot 80=240$.<br><strong>Svar:</strong> $240$ g`]),r(`1C-E4`,`Fellesnevner som ikke er en av nevnerne selv.<br><br><strong>a)</strong> $\\dfrac{5}{12}+\\dfrac{1}{18}$<br><br><strong>b)</strong> $\\dfrac{5}{8}-\\dfrac{1}{12}$<br><br><strong>c)</strong> $\\dfrac{2}{9}+\\dfrac{1}{6}$`,`Finn MFM. For $12$ og $18$ er MFM $36$.`,[`<strong>a)</strong> MFM$(12,18)=36$. $\\dfrac{15}{36}+\\dfrac{2}{36}=\\dfrac{17}{36}$.<br><strong>Svar:</strong> $\\dfrac{17}{36}$`,`<strong>b)</strong> MFM$(8,12)=24$. $\\dfrac{15}{24}-\\dfrac{2}{24}=\\dfrac{13}{24}$.<br><strong>Svar:</strong> $\\dfrac{13}{24}$`,`<strong>c)</strong> MFM$(9,6)=18$. $\\dfrac{4}{18}+\\dfrac{3}{18}=\\dfrac{7}{18}$.<br><strong>Svar:</strong> $\\dfrac{7}{18}$`]),r(`1C-E5`,`Algebraiske brøker. Forkort så langt det går. Husk restriksjoner.<br><br><strong>a)</strong> $\\dfrac{12a}{18a}$ når $a\\neq 0$<br><br><strong>b)</strong> $\\dfrac{6x-9}{3}$<br><br><strong>c)</strong> $\\dfrac{x}{4}+\\dfrac{x}{6}$`,`Ta ut felles faktor i teller og nevner. I c) er $x$ felles i telleren etter sammenlegging.`,[`<strong>a)</strong> $\\dfrac{12a}{18a}=\\dfrac{12}{18}=\\dfrac{2}{3}$.<br><strong>Svar:</strong> $\\dfrac{2}{3}$`,`<strong>b)</strong> $\\dfrac{3(2x-3)}{3}=2x-3$.<br><strong>Svar:</strong> $2x-3$`,`<strong>c)</strong> Fellesnevner $12$: $\\dfrac{3x}{12}+\\dfrac{2x}{12}=\\dfrac{5x}{12}$.<br><strong>Svar:</strong> $\\dfrac{5x}{12}$`])],"2A":[r(`2.17`,`Forenkle.<br><br><strong>a)</strong> $7x-3-2x+8$<br><br><strong>b)</strong> $3(2x-1)-4(x+5)$<br><br><strong>c)</strong> $x(x+2)-x^2+6$`,`Samle like ledd. Husk å gange inn i parentesen, også med minus foran.`,[`<strong>a)</strong> $(7x-2x)+(-3+8)=5x+5$.<br><strong>Svar:</strong> $5x+5$`,`<strong>b)</strong> $6x-3-4x-20=2x-23$.<br><strong>Svar:</strong> $2x-23$`,`<strong>c)</strong> $x^2+2x-x^2+6=2x+6$.<br><strong>Svar:</strong> $2x+6$`]),r(`2.18`,`Løs opp parentesene og trekk sammen.<br><br><strong>a)</strong> $(x+3)(x-1)$<br><br><strong>b)</strong> $2(x-4)(x+1)$<br><br><strong>c)</strong> $(2a-3)^2 - (a+1)(a-1)$`,`FOIL / kvadratsetning. Trekk sammen like ledd til slutt.`,[`<strong>a)</strong> $x^2-x+3x-3=x^2+2x-3$.<br><strong>Svar:</strong> $x^2+2x-3$`,`<strong>b)</strong> Først $(x-4)(x+1)=x^2-3x-4$, gange med $2$: $2x^2-6x-8$.<br><strong>Svar:</strong> $2x^2-6x-8$`,`<strong>c)</strong> $(2a-3)^2=4a^2-12a+9$.<br>$(a+1)(a-1)=a^2-1$.<br>$4a^2-12a+9-(a^2-1)=3a^2-12a+10$.<br><strong>Svar:</strong> $3a^2-12a+10$`]),r(`2.19`,`En rektangulær ramme har ytre sider $x+5$ og $x+2$. Den indre åpningen har sider $x+1$ og $x$.<br><br><strong>a)</strong> Finn et forenklet uttrykk for arealet av rammen (det som er igjen når åpningen er trukket fra).<br><br><strong>b)</strong> Regn ut arealet når $x=4$.`,`Ytre areal minus indre areal. Gang ut før du trekker.`,[`<strong>a)</strong> $(x+5)(x+2)-(x+1)x = x^2+7x+10 - (x^2+x) = 6x+10$.<br><strong>Svar:</strong> $6x+10$`,`<strong>b)</strong> $6\\cdot 4+10=34$.<br><strong>Svar:</strong> $34$`])],"2B":[r(`2.20`,`Bruk kvadratsetningene.<br><br><strong>a)</strong> $(x+7)^2$<br><br><strong>b)</strong> $(3y-4)^2$<br><br><strong>c)</strong> $(2t+5)(2t-5)$`,`$(a+b)^2=a^2+2ab+b^2$, $(a-b)^2=a^2-2ab+b^2$, $(a+b)(a-b)=a^2-b^2$.`,[`<strong>a)</strong> $x^2+14x+49$.<br><strong>Svar:</strong> $x^2+14x+49$`,`<strong>b)</strong> $9y^2-24y+16$.<br><strong>Svar:</strong> $9y^2-24y+16$`,`<strong>c)</strong> $4t^2-25$.<br><strong>Svar:</strong> $4t^2-25$`]),r(`2.21`,`Regn ut uten kalkulator ved å bruke kvadratsetninger.<br><br><strong>a)</strong> $51^2$<br><br><strong>b)</strong> $49\\cdot 51$<br><br><strong>c)</strong> $103^2$`,`Skriv $51=50+1$, $49=50-1$, $103=100+3$.`,[`<strong>a)</strong> $(50+1)^2=2500+100+1=2601$.<br><strong>Svar:</strong> $2601$`,`<strong>b)</strong> $(50-1)(50+1)=2500-1=2499$.<br><strong>Svar:</strong> $2499$`,`<strong>c)</strong> $(100+3)^2=10000+600+9=10609$.<br><strong>Svar:</strong> $10609$`]),r(`2.22`,`Forenkle.<br><br><strong>a)</strong> $(x+3)^2-(x-3)^2$<br><br><strong>b)</strong> $(\\sqrt{7}+2)(\\sqrt{7}-2)$`,`Skriv ut kvadratsetningene, eller se at a) er differanse mellom to kvadrat.`,[`<strong>a)</strong> $(x^2+6x+9)-(x^2-6x+9)=12x$.<br><strong>Svar:</strong> $12x$`,`<strong>b)</strong> $7-4=3$.<br><strong>Svar:</strong> $3$`])],"2C":[r(`2.23`,`Faktoriser (sett felles faktor utenfor parentes).<br><br><strong>a)</strong> $12x-18$<br><br><strong>b)</strong> $6x^2+9x$<br><br><strong>c)</strong> $4a^2b-10ab^2$`,`Finn største felles tallfaktor og felles bokstaver med lavest potens.`,[`<strong>a)</strong> $6(2x-3)$. <strong>Svar:</strong> $6(2x-3)$`,`<strong>b)</strong> $3x(2x+3)$. <strong>Svar:</strong> $3x(2x+3)$`,`<strong>c)</strong> $2ab(2a-5b)$. <strong>Svar:</strong> $2ab(2a-5b)$`]),r(`2.24`,`<strong>a)</strong> Vis at $\\sqrt{48}-\\sqrt{12}=2\\sqrt{3}$.<br><br><strong>b)</strong> Faktoriser $x(x-5)+2(x-5)$.`,`Trekk ut kvadrattall under rota. I b) er $(x-5)$ felles faktor.`,[`<strong>a)</strong> $\\sqrt{48}=\\sqrt{16\\cdot 3}=4\\sqrt{3}$, $\\sqrt{12}=\\sqrt{4\\cdot 3}=2\\sqrt{3}$.<br>$4\\sqrt{3}-2\\sqrt{3}=2\\sqrt{3}$.<br><strong>Svar:</strong> vist.`,`<strong>b)</strong> $(x-5)(x+2)$.<br><strong>Svar:</strong> $(x-5)(x+2)$`])],"2D":[r(`2.25`,`Faktoriser.<br><br><strong>a)</strong> $x^2-9$<br><br><strong>b)</strong> $x^2+8x+16$<br><br><strong>c)</strong> $x^2-5x+6$`,`Differanse mellom to kvadrat, fullstendig kvadrat, eller to tall med produkt $c$ og sum $b$.`,[`<strong>a)</strong> $(x-3)(x+3)$. <strong>Svar:</strong> $(x-3)(x+3)$`,`<strong>b)</strong> $(x+4)^2$. <strong>Svar:</strong> $(x+4)^2$`,`<strong>c)</strong> $(x-2)(x-3)$. <strong>Svar:</strong> $(x-2)(x-3)$`]),r(`2.26`,`Faktoriser hvis det er mulig. Hvis ikke, forklar hvorfor.<br><br><strong>a)</strong> $x^2+4$<br><br><strong>b)</strong> $2x^2-8$<br><br><strong>c)</strong> $x^2+x-12$`,`$x^2+4$ er sum av kvadrat, ikke differanse. I b) ta ut $2$ først.`,[`<strong>a)</strong> $x^2+4=(x)^2+2^2$ er ikke differanse mellom to kvadrat (over reelle tall).<br><strong>Svar:</strong> kan ikke faktoriseres videre i $\\mathbb{R}$.`,`<strong>b)</strong> $2(x^2-4)=2(x-2)(x+2)$.<br><strong>Svar:</strong> $2(x-2)(x+2)$`,`<strong>c)</strong> $(x+4)(x-3)$.<br><strong>Svar:</strong> $(x+4)(x-3)$`])],"2E":[r(`2.27`,`Forkort.<br><br><strong>a)</strong> $\\dfrac{8x-12}{4}$<br><br><strong>b)</strong> $\\dfrac{x^2-9}{x-3}$ når $x\\neq 3$<br><br><strong>c)</strong> $\\dfrac{2x^2+6x}{2x}$ når $x\\neq 0$`,`Faktoriser teller (og nevner) før du stryker felles faktorer.`,[`<strong>a)</strong> $\\dfrac{4(2x-3)}{4}=2x-3$. <strong>Svar:</strong> $2x-3$`,`<strong>b)</strong> $\\dfrac{(x-3)(x+3)}{x-3}=x+3$. <strong>Svar:</strong> $x+3$`,`<strong>c)</strong> $\\dfrac{2x(x+3)}{2x}=x+3$. <strong>Svar:</strong> $x+3$`]),r(`2.28`,`Trekk sammen til én brøk.<br><br><strong>a)</strong> $\\dfrac{2}{x}+\\dfrac{3}{2x}$<br><br><strong>b)</strong> $\\dfrac{x}{x+1}-\\dfrac{1}{x+1}$`,`Fellesnevner. I b) er nevneren allerede lik.`,[`<strong>a)</strong> Fellesnevner $2x$: $\\dfrac{4}{2x}+\\dfrac{3}{2x}=\\dfrac{7}{2x}$.<br><strong>Svar:</strong> $\\dfrac{7}{2x}$`,`<strong>b)</strong> $\\dfrac{x-1}{x+1}$.<br><strong>Svar:</strong> $\\dfrac{x-1}{x+1}$`])],"2F":[r(`2.29`,`Et kvadrat har side $s$. Et rektangel har sider $s+2$ og $s-1$.<br><br><strong>a)</strong> Finn et uttrykk for differansen mellom rektangelets og kvadratets areal.<br><br><strong>b)</strong> For hvilken $s$ er arealene like store?`,`Areal kvadrat $s^2$, rektangel $(s+2)(s-1)$. Sett differansen lik $0$.`,[`<strong>a)</strong> $(s+2)(s-1)-s^2 = s^2+s-2-s^2 = s-2$.<br><strong>Svar:</strong> $s-2$`,`<strong>b)</strong> $s-2=0 \\Rightarrow s=2$.<br><strong>Svar:</strong> $s=2$`])],"3A":[r(`3.23`,`Løs likningene og sett prøve.<br><br><strong>a)</strong> $5x-7=2x+8$<br><br><strong>b)</strong> $3(x-2)=2x+9$<br><br><strong>c)</strong> $\\dfrac{x}{4}-\\dfrac{x}{6}=1$`,`Samle $x$ på én side. I c) gang med fellesnevner $12$.`,[`<strong>a)</strong> $5x-2x=8+7$, $3x=15$, $x=5$. Prøve: $25-7=10+8=18$.<br><strong>Svar:</strong> $x=5$`,`<strong>b)</strong> $3x-6=2x+9$, $x=15$.<br><strong>Svar:</strong> $x=15$`,`<strong>c)</strong> Gang med $12$: $3x-2x=12$, $x=12$.<br><strong>Svar:</strong> $x=12$`]),r(`3.24`,`Omkretsen av et rektangel er $54$ cm. Lengden er $3$ cm lenger enn dobbel bredde.<br>La $b$ være bredden. Sett opp en likning og finn sidene.`,`Omkrets $2(l+b)=54$. $l=2b+3$.`,[`$2((2b+3)+b)=54$, $2(3b+3)=54$, $3b+3=27$, $3b=24$, $b=8$.<br>Lengde $2\\cdot 8+3=19$.<br><strong>Svar:</strong> bredde $8$ cm, lengde $19$ cm.`]),r(`3.25`,`Løs ulikheten og skriv svaret både med ulikhetstegn og som intervall.<br><br><strong>a)</strong> $2x-5 < 7$<br><br><strong>b)</strong> $4-3x \\geq 10$`,`Samme flytteregler som for likninger. Når du ganger/deler med et negativt tall, snur ulikheten.`,[`<strong>a)</strong> $2x<12$, $x<6$. Intervall: $\\langle\\leftarrow, 6\\rangle$.<br><strong>Svar:</strong> $x<6$, $x\\in\\langle\\leftarrow,6\\rangle$`,`<strong>b)</strong> $-3x\\geq 6$. Del på $-3$ og snu: $x\\leq -2$.<br><strong>Svar:</strong> $x\\leq -2$, $x\\in\\langle\\leftarrow,-2]$`])],"3B":[r(`3.26`,`Formelen $s=v_0 t + \\dfrac{1}{2}at^2$ gir strekning ved konstant akselerasjon.<br><br><strong>a)</strong> Isoler $a$.<br><br><strong>b)</strong> Finn $a$ når $s=40$, $v_0=2$ og $t=4$.`,`Trekk fra $v_0 t$, gang med $2$ og del på $t^2$.`,[`<strong>a)</strong> $s-v_0 t=\\dfrac{1}{2}at^2$, $2(s-v_0 t)=at^2$, $a=\\dfrac{2(s-v_0 t)}{t^2}$.<br><strong>Svar:</strong> $a=\\dfrac{2(s-v_0 t)}{t^2}$`,`<strong>b)</strong> $a=\\dfrac{2(40-8)}{16}=\\dfrac{64}{16}=4$.<br><strong>Svar:</strong> $a=4$`]),r(`3.27`,`$\\dfrac{1}{R}=\\dfrac{1}{R_1}+\\dfrac{1}{R_2}$. Isoler $R$.`,`Fellesnevner $R_1 R_2$ på høyre side, deretter inverter begge sider.`,[`$\\dfrac{1}{R}=\\dfrac{R_2+R_1}{R_1 R_2}$, så $R=\\dfrac{R_1 R_2}{R_1+R_2}$.<br><strong>Svar:</strong> $R=\\dfrac{R_1 R_2}{R_1+R_2}$`])],"3C":[r(`3.28`,`Løs.<br><br><strong>a)</strong> $x^2=25$<br><br><strong>b)</strong> $(x-3)(x+1)=0$<br><br><strong>c)</strong> $x^2-6x=0$`,`Husk $\\pm$ når du tar kvadratrot. Produktregelen: et av faktorene er $0$.`,[`<strong>a)</strong> $x=\\pm 5$. <strong>Svar:</strong> $x=-5$ eller $x=5$`,`<strong>b)</strong> $x=3$ eller $x=-1$. <strong>Svar:</strong> $x=3$ eller $x=-1$`,`<strong>c)</strong> $x(x-6)=0$, så $x=0$ eller $x=6$. <strong>Svar:</strong> $x=0$ eller $x=6$`]),r(`3.29`,`Et rektangel har areal $48$ og den ene siden er $2$ lenger enn den andre. Finn sidene.`,`La bredden være $x$. Da er lengden $x+2$, og $x(x+2)=48$.`,[`$x^2+2x-48=0$. Faktoriser: $(x+8)(x-6)=0$.<br>$x=-8$ (gir ikke lengde) eller $x=6$.<br>Sider $6$ og $8$.<br><strong>Svar:</strong> $6$ og $8$`])],"3D":[r(`3.30`,`Løs med abc-formelen. Oppgi eksakt svar.<br><br><strong>a)</strong> $x^2-4x-1=0$<br><br><strong>b)</strong> $2x^2+x-6=0$`,`$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Forenkle rota hvis du kan.`,[`<strong>a)</strong> $a=1,b=-4,c=-1$. $D=16+4=20=4\\cdot 5$.<br>$x=\\dfrac{4\\pm 2\\sqrt{5}}{2}=2\\pm\\sqrt{5}$.<br><strong>Svar:</strong> $x=2+\\sqrt{5}$ eller $x=2-\\sqrt{5}$`,`<strong>b)</strong> $a=2,b=1,c=-6$. $D=1+48=49$.<br>$x=\\dfrac{-1\\pm 7}{4}$. $x=\\dfrac{6}{4}=\\dfrac{3}{2}$ eller $x=\\dfrac{-8}{4}=-2$.<br><strong>Svar:</strong> $x=\\dfrac{3}{2}$ eller $x=-2$`]),r(`3.31`,`Likningen $x^2-6x+k=0$ har nøyaktig én løsning. Finn $k$ og løsningen.`,`Én løsning $\\Leftrightarrow$ diskriminanten er $0$.`,[`$D=36-4k=0$, $k=9$. Da $x=\\dfrac{6}{2}=3$.<br><strong>Svar:</strong> $k=9$ og $x=3$`])],"3E":[r(`3.32`,`Løs og sjekk for falske løsninger.<br><br><strong>a)</strong> $\\dfrac{x+1}{x-2}=3$<br><br><strong>b)</strong> $\\dfrac{2}{x}=\\dfrac{x}{8}$`,`Gang med nevneren. $x$ kan ikke gjøre en nevner lik $0$.`,[`<strong>a)</strong> $x+1=3(x-2)$, $x+1=3x-6$, $7=2x$, $x=\\dfrac{7}{2}$. Nevner $x-2\\neq 0$. OK.<br><strong>Svar:</strong> $x=\\dfrac{7}{2}$`,`<strong>b)</strong> $16=x^2$, $x=\\pm 4$. Ingen av dem gir nevner $0$.<br><strong>Svar:</strong> $x=4$ eller $x=-4$`]),r(`3.33`,`$\\dfrac{x}{x-1}-\\dfrac{2}{x+1}=1$. Løs likningen.`,`Fellesnevner $(x-1)(x+1)=x^2-1$. Husk $x\\neq\\pm 1$.`,[`Gang med $(x-1)(x+1)$: $x(x+1)-2(x-1)=(x^2-1)$.<br>$x^2+x-2x+2=x^2-1$, $-x+2=-1$, $-x=-3$, $x=3$.<br>$x=3$ er tillatt.<br><strong>Svar:</strong> $x=3$`])],"3F":[r(`3.34`,`En oppskrift til $4$ personer bruker $3$ dl fløte. Du skal lage mat til $6$ personer.<br><br><strong>a)</strong> Sett opp en proporsjon og finn hvor mye fløte du trenger.<br><br><strong>b)</strong> Hvor mange personer kan du lage mat til med $9$ dl fløte?`,`Mengde og antall personer er proporsjonale. $\\dfrac{3}{4}=\\dfrac{x}{6}$.`,[`<strong>a)</strong> $\\dfrac{3}{4}=\\dfrac{x}{6}$, $x=\\dfrac{3\\cdot 6}{4}=4.5$.<br><strong>Svar:</strong> $4.5$ dl.`,`<strong>b)</strong> $\\dfrac{3}{4}=\\dfrac{9}{n}$, $3n=36$, $n=12$.<br><strong>Svar:</strong> $12$ personer.`]),r(`3.35`,`En bil bruker $0.6$ liter bensin per mil. Bensintanken rommer $48$ liter.<br><br><strong>a)</strong> Hvor langt kan bilen kjøre på en full tank?<br><br><strong>b)</strong> Hvor mye bensin trengs til $250$ km? (Ett mil $=10$ km.)`,`Forbruket er proporsjonalt med distansen.`,[`<strong>a)</strong> $48/0.6=80$ mil $=800$ km.<br><strong>Svar:</strong> $800$ km.`,`<strong>b)</strong> $250$ km $=25$ mil. $25\\cdot 0.6=15$.<br><strong>Svar:</strong> $15$ liter.`])],"3G":[r(`3.36`,`Utfør polynomdivisjonen $(x^2+5x+6):(x+2)$ og sett prøve.`,`Hvor mange ganger går $x$ i $x^2$? Gang tilbake og trekk fra.`,[`$(x^2+5x+6):(x+2)=x+3$ fordi $(x+2)(x+3)=x^2+5x+6$.<br><strong>Svar:</strong> $x+3$`]),r(`3.37`,`Polynomet $P(x)=x^3-2x^2-5x+6$ har et nullpunkt $x=1$.<br><br><strong>a)</strong> Del $P(x)$ på $(x-1)$.<br><br><strong>b)</strong> Faktoriser $P(x)$ fullstendig.`,`Restteoremet: $P(1)=0$ betyr at $(x-1)$ går opp. Faktoriser andregraden etterpå.`,[`<strong>a)</strong> $(x^3-2x^2-5x+6):(x-1)=x^2-x-6$.<br><strong>Svar:</strong> $x^2-x-6$`,`<strong>b)</strong> $x^2-x-6=(x-3)(x+2)$.<br>Dermed $P(x)=(x-1)(x-3)(x+2)$.<br><strong>Svar:</strong> $(x-1)(x-3)(x+2)$`])]},a={"1A":`1A Tallmengder og regneregler`,"1B":`1B Figurtall og mønstre`,"1C":`1C Faktorer og brøk`,"1D":`1D Potenser`,"1E":`1E Standardform`,"1F":`1F Logikk og bevis`,"1OP":`Øveprøve`,"2A":`2A Forenkle uttrykk`,"2B":`2B Kvadratsetninger`,"2C":`2C Felles faktor`,"2D":`2D Faktorisering`,"2E":`2E Algebraiske brøker`,"2F":`2F Figurer og mønstre`,"2OP":`Øveprøve`,"3A":`3A Førstegradslikninger`,"3B":`3B Formler`,"3C":`3C Andregradslikninger`,"3D":`3D ABC-formelen`,"3E":`3E Rasjonale likninger`,"3F":`3F Proporsjoner`,"3G":`3G Polynomdivisjon`,"3OP":`Øveprøve`,"4A":`4A Funksjonsbegrepet`,"4B":`4B Lineære funksjoner`,"4C":`4C Polynomfunksjoner`,"4D":`4D Rasjonale funksjoner`,"4E":`4E Potensfunksjoner`,"4F":`4F Eksponentialfunksjoner`,"4G":`4G Drøfting`,"4H":`4H Vekstfart og derivasjon`};function o(e,t,n,r,i){return{id:e,tittel:t,tekst:n,bilde:null,hint:r,fasit:null,fasitSteg:i,starter:``}}var s={id:`3OP`,tittel:`Øveprøve`,oppgaver:[o(`3.OP0`,`Øveprøve · Kapittel 3 (oversikt)`,`<strong>Tid:</strong> ca. 60–75 min<br><strong>Hjelpemidler:</strong> ingen (kun kladdeark)<br><br><strong>Instruks:</strong> Vis mellomregning. Sett prøve der det er naturlig. Oppgaver med flere bokstaver teller hver for seg.<br><br>Prøven dekker førstegradslikninger, formler, andregradslikninger, ABC-formelen, rasjonale likninger, ulikheter, proporsjoner og polynomdivisjon.`,`Les hele prøven først. Begynn med det du mestrer, og kom tilbake til de tyngre oppgavene.`,[`Dette er oversiktssiden. Gå videre til oppgave 1–10.`]),o(`3.OP1`,`Oppgave 1 — Førstegradslikninger`,`Løs likningene og sett prøve.<br><br><strong>a)</strong> $4x-7=2x+9$<br><br><strong>b)</strong> $3(x-4)=2(x+1)-5$<br><br><strong>c)</strong> $\\dfrac{x}{3}-\\dfrac{x}{5}=2$`,`Samle $x$ på én side. I c) gang med fellesnevner $15$.`,[`<strong>a)</strong> $4x-2x=9+7$, $2x=16$, $x=8$. Prøve: $32-7=16+9=25$.<br><strong>Svar:</strong> $x=8$`,`<strong>b)</strong> $3x-12=2x+2-5$, $3x-12=2x-3$, $x=9$.<br><strong>Svar:</strong> $x=9$`,`<strong>c)</strong> Gang med $15$: $5x-3x=30$, $2x=30$, $x=15$.<br><strong>Svar:</strong> $x=15$`]),o(`3.OP2`,`Oppgave 2 — Fra tekst til likning`,`Omkretsen av et rektangel er $64$ cm. Lengden er $4$ cm lenger enn tre ganger bredden.<br><br><strong>a)</strong> Sett opp en likning med $b$ som bredde.<br><br><strong>b)</strong> Finn sidene.`,`Omkrets $2(l+b)=64$. Lengde $l=3b+4$.`,[`<strong>a)</strong> $2((3b+4)+b)=64$, altså $2(4b+4)=64$.<br><strong>Svar:</strong> $2(4b+4)=64$ (eller $4b+4=32$)`,`<strong>b)</strong> $4b+4=32$, $4b=28$, $b=7$. Lengde $3\\cdot 7+4=25$.<br><strong>Svar:</strong> bredde $7$ cm, lengde $25$ cm.`]),o(`3.OP3`,`Oppgave 3 — Formler`,`Omkretsen av en sirkel er $C=2\\pi r$.<br><br><strong>a)</strong> Isoler $r$.<br><br><strong>b)</strong> Finn $r$ når $C=10\\pi$. Oppgi eksakt svar.`,`Del på $2\\pi$.`,[`<strong>a)</strong> $r=\\dfrac{C}{2\\pi}$.<br><strong>Svar:</strong> $r=\\dfrac{C}{2\\pi}$`,`<strong>b)</strong> $r=\\dfrac{10\\pi}{2\\pi}=5$.<br><strong>Svar:</strong> $r=5$`]),o(`3.OP4`,`Oppgave 4 — Andregrad ved faktorisering`,`Løs.<br><br><strong>a)</strong> $x^2-9=0$<br><br><strong>b)</strong> $x^2-7x+10=0$<br><br><strong>c)</strong> $2x^2-8x=0$`,`Produktregelen, eller ta ut felles faktor først.`,[`<strong>a)</strong> $(x-3)(x+3)=0$, $x=\\pm 3$.<br><strong>Svar:</strong> $x=-3$ eller $x=3$`,`<strong>b)</strong> $(x-2)(x-5)=0$.<br><strong>Svar:</strong> $x=2$ eller $x=5$`,`<strong>c)</strong> $2x(x-4)=0$.<br><strong>Svar:</strong> $x=0$ eller $x=4$`]),o(`3.OP5`,`Oppgave 5 — ABC-formelen`,`Løs med abc-formelen. Oppgi eksakt svar.<br><br><strong>a)</strong> $x^2-6x+4=0$<br><br><strong>b)</strong> $2x^2+x-6=0$`,`$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Forenkle rota.`,[`<strong>a)</strong> $a=1,b=-6,c=4$. $D=36-16=20=4\\cdot 5$.<br>$x=\\dfrac{6\\pm 2\\sqrt{5}}{2}=3\\pm\\sqrt{5}$.<br><strong>Svar:</strong> $x=3+\\sqrt{5}$ eller $x=3-\\sqrt{5}$`,`<strong>b)</strong> $a=2,b=1,c=-6$. $D=1+48=49$.<br>$x=\\dfrac{-1\\pm 7}{4}$. $x=\\dfrac{6}{4}=\\dfrac{3}{2}$ eller $x=-2$.<br><strong>Svar:</strong> $x=\\dfrac{3}{2}$ eller $x=-2$`]),o(`3.OP6`,`Oppgave 6 — Diskriminant`,`Likningen $x^2-4x+k=0$ har nøyaktig én løsning.<br><br><strong>a)</strong> Finn $k$.<br><br><strong>b)</strong> Finn løsningen.`,`Én løsning $\\Leftrightarrow$ $D=0$.`,[`<strong>a)</strong> $D=16-4k=0$, $k=4$.<br><strong>Svar:</strong> $k=4$`,`<strong>b)</strong> $x=\\dfrac{4}{2}=2$.<br><strong>Svar:</strong> $x=2$`]),o(`3.OP7`,`Oppgave 7 — Rasjonale likninger`,`Løs og sjekk for falske løsninger.<br><br><strong>a)</strong> $\\dfrac{x+2}{x-1}=3$<br><br><strong>b)</strong> $\\dfrac{2}{x}=\\dfrac{x}{8}$`,`Gang med nevneren. $x$ kan ikke gjøre en nevner lik $0$.`,[`<strong>a)</strong> $x+2=3(x-1)$, $x+2=3x-3$, $5=2x$, $x=\\dfrac{5}{2}$. Nevner OK.<br><strong>Svar:</strong> $x=\\dfrac{5}{2}$`,`<strong>b)</strong> $16=x^2$, $x=\\pm 4$. Ingen gir nevner $0$.<br><strong>Svar:</strong> $x=4$ eller $x=-4$`]),o(`3.OP8`,`Oppgave 8 — Ulikheter`,`Løs og skriv svaret både med ulikhetstegn og som intervall.<br><br><strong>a)</strong> $3x-4 < 8$<br><br><strong>b)</strong> $5-2x \\geq 11$`,`Når du deler på et negativt tall, snur ulikheten.`,[`<strong>a)</strong> $3x<12$, $x<4$. Intervall $\\langle\\leftarrow,4\\rangle$.<br><strong>Svar:</strong> $x<4$`,`<strong>b)</strong> $-2x\\geq 6$. Del på $-2$ og snu: $x\\leq -3$.<br><strong>Svar:</strong> $x\\leq -3$, $x\\in\\langle\\leftarrow,-3]$`]),o(`3.OP9`,`Oppgave 9 — Proporsjoner`,`En oppskrift til $5$ personer bruker $200$ g ost. Du skal lage mat til $8$ personer.<br><br><strong>a)</strong> Sett opp en proporsjon og finn hvor mye ost du trenger.<br><br><strong>b)</strong> Hvor mange personer kan du lage mat til med $360$ g ost?`,`$\\dfrac{200}{5}=\\dfrac{x}{8}$.`,[`<strong>a)</strong> $x=\\dfrac{200\\cdot 8}{5}=320$.<br><strong>Svar:</strong> $320$ g`,`<strong>b)</strong> $\\dfrac{200}{5}=\\dfrac{360}{n}$, $200n=1800$, $n=9$.<br><strong>Svar:</strong> $9$ personer.`]),o(`3.OP10`,`Oppgave 10 — Polynomdivisjon`,`Polynomet $P(x)=x^3-4x^2+x+6$ har et nullpunkt $x=2$.<br><br><strong>a)</strong> Vis at $P(2)=0$.<br><br><strong>b)</strong> Del $P(x)$ på $(x-2)$.<br><br><strong>c)</strong> Faktoriser $P(x)$ fullstendig.`,`Restteoremet: $P(2)=0$ betyr at $(x-2)$ går opp. Faktoriser andregraden etterpå.`,[`<strong>a)</strong> $P(2)=8-16+2+6=0$.<br><strong>Svar:</strong> vist, $P(2)=0$.`,`<strong>b)</strong> $(x^3-4x^2+x+6):(x-2)=x^2-2x-3$.<br><strong>Svar:</strong> $x^2-2x-3$`,`<strong>c)</strong> $x^2-2x-3=(x-3)(x+1)$.<br>Dermed $P(x)=(x-2)(x-3)(x+1)$.<br><strong>Svar:</strong> $(x-2)(x-3)(x+1)$`])],quiz:[{sporsmal:`Løs $5x-3=2x+9$.`,alternativer:[`$x=2$`,`$x=4$`,`$x=6$`,`$x=12$`],riktigSvar:1,forklaring:`$5x-2x=9+3$, $3x=12$, $x=4$.`},{sporsmal:`Hva skjer med ulikheten når du deler på et negativt tall?`,alternativer:[`Ingenting`,`Ulikheten snur`,`Løsningen blir 0`,`Ulikheten blir en likning`],riktigSvar:1,forklaring:`Når du ganger eller deler med et negativt tall, må ulikhetstegnet snus.`},{sporsmal:`Hvor mange løsninger har $x^2-6x+9=0$?`,alternativer:[`Ingen`,`Én`,`To ulike`,`Uendelig mange`],riktigSvar:1,forklaring:`$D=36-36=0$, så nøyaktig én løsning ($x=3$).`},{sporsmal:`ABC-formelen er $x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Hva kalles $b^2-4ac$?`,alternativer:[`Koeffisienten`,`Diskriminanten`,`Konstantleddet`,`Nullpunktet`],riktigSvar:1,forklaring:`Diskriminanten $D=b^2-4ac$ avgjør antall reelle løsninger.`},{sporsmal:`Når du løser $\\dfrac{x+1}{x-2}=4$, hvilken verdi er forbudt?`,alternativer:[`$x=0$`,`$x=1$`,`$x=2$`,`$x=4$`],riktigSvar:2,forklaring:`Nevneren $x-2$ kan ikke være $0$, så $x\\neq 2$.`},{sporsmal:`Faktoriser $x^2-5x+6$.`,alternativer:[`$(x-1)(x-6)$`,`$(x-2)(x-3)$`,`$(x+2)(x+3)$`,`$(x-6)(x+1)$`],riktigSvar:1,forklaring:`To tall med produkt $6$ og sum $-5$ er $-2$ og $-3$.`},{sporsmal:`Hvis $P(3)=0$, hva vet du om polynomet $P$?`,alternativer:[`$(x+3)$ er en faktor`,`$(x-3)$ er en faktor`,`Polynomet har grad 3`,`Polynomet har ingen reelle røtter`],riktigSvar:1,forklaring:`Restteoremet: $P(a)=0$ $\\Leftrightarrow$ $(x-a)$ er en faktor. Her $a=3$.`},{sporsmal:`$\\dfrac{3}{4}=\\dfrac{x}{12}$. Hva er $x$?`,alternativer:[`$6$`,`$8$`,`$9$`,`$16$`],riktigSvar:2,forklaring:`Kryssprodukt: $3\\cdot 12=4x$, $x=9$.`}]},c=e.map(e=>{let t=e.delkapitler.map(e=>({...e,tittel:a[e.id]||e.tittel,oppgaver:[...e.oppgaver,...(i[e.id]||[]).map((e,t,n)=>{if(/^\d+\.\d+$/.test(e.id)&&e.id.startsWith(`1.`))return e;if(/^\d+\.\d+$/.test(e.id))return{...e,tittel:`Ekstraøving ${t+1}`};let r=n.slice(0,t+1).filter(e=>!/^\d+\.\d+$/.test(e.id)).length;return{...e,tittel:`Ekstraøving ${r}`}})]}));return e.id===`kap3`?{...e,delkapitler:[...t,s]}:{...e,delkapitler:t}}),l=t,u=n,d={kap1:{short:`Tallforståelse og algebra`,blurb:`Tallmengder, potenser, standardform og logikk`,image:`/images/kap1.jpg`,tint:`#818cf8`},kap2:{short:`Algebra og mønstre`,blurb:`Kvadratsetninger, faktorisering og rasjonale uttrykk`,image:`/images/kap2.jpg`,tint:`#34d399`},kap3:{short:`Likninger og ulikheter`,blurb:`Likninger, ulikheter og polynomdivisjon`,image:`/images/kap3.jpg`,tint:`#f59e0b`},kap4:{short:`Funksjoner`,blurb:`Funksjoner, derivasjon og funksjonsdrøfting`,image:`/images/kap4.jpg`,tint:`#a78bfa`}},f={"1A":[{tittel:`Regnerekkefølge og parenteser`,url:`https://www.youtube.com/watch?v=HCvi7QZBoGE`},{tittel:`Tallmengder og intervaller`,url:`https://www.youtube.com/watch?v=4ey3raG716U`}],"1B":[{tittel:`Figurtall og mønstre`,url:`https://www.youtube.com/watch?v=Pm1Z8GJFqPw`}],"1C":[{tittel:`Primtall og faktorisering`,url:`https://www.youtube.com/watch?v=iMmTOV6rKqg`},{tittel:`Brøkregning`,url:`https://www.youtube.com/watch?v=2foqFiSTRPc`}],"1D":[{tittel:`Potenser`,url:`https://www.youtube.com/watch?v=daQqN2aB7is`}],"1E":[{tittel:`Kvadratrøtter`,url:`https://www.youtube.com/watch?v=NRx60-H6ZY0`},{tittel:`Standardform`,url:`https://www.youtube.com/watch?v=SSb_IddmrdE`}],"1F":[{tittel:`Implikasjon og ekvivalens`,url:`https://www.youtube.com/watch?v=lnB4y3IyCRQ`}]};function p(e){return c.find(t=>t.id===e)}function m(e,t){return p(e)?.delkapitler.find(e=>e.id===t)}var h={34:{kapId:null,subId:null,tekst:`Uke 34 — Tirsdag: grilling og oppstart. Torsdag: Strandheim.`},35:{kapId:`kap1`,subId:`1A`,tekst:`Uke 35 — Tirsdag: kapittel 1A. Torsdag: 1B/1D.`},36:{kapId:`kap1`,subId:`1E`,tekst:`Uke 36 — Tirsdag: Osloprøve. Torsdag: kapittel 1E.`},37:{kapId:`kap2`,subId:`2B`,tekst:`Uke 37 — Tirsdag: kapittel 2B. Torsdag: 2C.`},38:{kapId:`kap2`,subId:`2D`,tekst:`Uke 38 — Tirsdag: kapittel 2D. Torsdag: 2E/F.`},39:{kapId:`kap2`,subId:`2F`,tekst:`Uke 39 — Tirsdag: kapittel 2F. Torsdag: prøve.`},40:{kapId:null,subId:null,tekst:`Uke 40 — Høstferie. Lad batteriene.`}};export{l as a,u as c,c as i,h as n,p as o,f as r,m as s,d as t};
+    print(produkt)`}];function r(e,t,n,r){return{id:e,tittel:`Oppgave ${e}`,tekst:t,bilde:null,hint:n,fasit:null,fasitSteg:r,starter:``}}var i={"1C":[r(`1.46`,`Start med det grunnleggende.<br><br><strong>a)</strong> Skriv som brøk: tre av åtte kakestykker.<br><br><strong>b)</strong> I brøken $\\dfrac{5}{6}$ — hva er telleren, og hva er nevneren?<br><br><strong>c)</strong> Er $\\dfrac{3}{7}$ en ekte eller uekte brøk? Begrunn med én setning.`,`Telleren står oppe, nevneren nede. Ekte brøk: teller mindre enn nevner.`,[`<strong>a)</strong> Tre av åtte skrives $\\dfrac{3}{8}$.<br><strong>Svar:</strong> $\\dfrac{3}{8}$`,`<strong>b)</strong> Telleren er $5$, nevneren er $6$.<br><strong>Svar:</strong> teller $5$, nevner $6$`,`<strong>c)</strong> $3<7$, så brøken er ekte.<br><strong>Svar:</strong> ekte brøk`]),r(`1.47`,`Utvid og se at verdien er den samme.<br><br><strong>a)</strong> Utvid $\\dfrac{1}{2}$ slik at nevneren blir $8$.<br><br><strong>b)</strong> Utvid $\\dfrac{2}{3}$ slik at nevneren blir $12$.<br><br><strong>c)</strong> Er $\\dfrac{2}{4}$ og $\\dfrac{1}{2}$ like store? Vis ved å utvide eller forkorte.`,`Gang teller og nevner med samme tall. Verdien endres ikke.`,[`<strong>a)</strong> Gang med $4$: $\\dfrac{1\\cdot 4}{2\\cdot 4}=\\dfrac{4}{8}$.<br><strong>Svar:</strong> $\\dfrac{4}{8}$`,`<strong>b)</strong> Gang med $4$: $\\dfrac{2\\cdot 4}{3\\cdot 4}=\\dfrac{8}{12}$.<br><strong>Svar:</strong> $\\dfrac{8}{12}$`,`<strong>c)</strong> $\\dfrac{2}{4}=\\dfrac{2\\div 2}{4\\div 2}=\\dfrac{1}{2}$. Ja, de er like.<br><strong>Svar:</strong> ja, begge er $\\dfrac{1}{2}$`]),r(`1.48`,`Forkort så langt det går.<br><br><strong>a)</strong> $\\dfrac{4}{8}$<br><br><strong>b)</strong> $\\dfrac{9}{12}$<br><br><strong>c)</strong> $\\dfrac{15}{25}$`,`Del teller og nevner med største felles faktor (SFF).`,[`<strong>a)</strong> SFF$(4,8)=4$, så $\\dfrac{4}{8}=\\dfrac{1}{2}$.<br><strong>Svar:</strong> $\\dfrac{1}{2}$`,`<strong>b)</strong> SFF$(9,12)=3$, så $\\dfrac{9}{12}=\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{3}{4}$`,`<strong>c)</strong> SFF$(15,25)=5$, så $\\dfrac{15}{25}=\\dfrac{3}{5}$.<br><strong>Svar:</strong> $\\dfrac{3}{5}$`]),r(`1.49`,`Samme nevner — da er det bare å plusse eller trekke tellerne.<br><br><strong>a)</strong> $\\dfrac{2}{7}+\\dfrac{3}{7}$<br><br><strong>b)</strong> $\\dfrac{5}{6}-\\dfrac{1}{6}$<br><br><strong>c)</strong> $\\dfrac{3}{10}+\\dfrac{4}{10}+\\dfrac{1}{10}$`,`Behold nevneren. Forkort svaret hvis du kan.`,[`<strong>a)</strong> $\\dfrac{2+3}{7}=\\dfrac{5}{7}$.<br><strong>Svar:</strong> $\\dfrac{5}{7}$`,`<strong>b)</strong> $\\dfrac{5-1}{6}=\\dfrac{4}{6}=\\dfrac{2}{3}$.<br><strong>Svar:</strong> $\\dfrac{2}{3}$`,`<strong>c)</strong> $\\dfrac{3+4+1}{10}=\\dfrac{8}{10}=\\dfrac{4}{5}$.<br><strong>Svar:</strong> $\\dfrac{4}{5}$`]),r(`1.50`,`Ulik nevner. Finn fellesnevner først.<br><br><strong>a)</strong> $\\dfrac{1}{2}+\\dfrac{1}{4}$<br><br><strong>b)</strong> $\\dfrac{1}{3}+\\dfrac{1}{6}$<br><br><strong>c)</strong> $\\dfrac{3}{4}-\\dfrac{1}{2}$`,`Den minste fellesnevneren er ofte det største av de to nevnerne når den ene går opp i den andre.`,[`<strong>a)</strong> Fellesnevner $4$: $\\dfrac{2}{4}+\\dfrac{1}{4}=\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{3}{4}$`,`<strong>b)</strong> Fellesnevner $6$: $\\dfrac{2}{6}+\\dfrac{1}{6}=\\dfrac{3}{6}=\\dfrac{1}{2}$.<br><strong>Svar:</strong> $\\dfrac{1}{2}$`,`<strong>c)</strong> Fellesnevner $4$: $\\dfrac{3}{4}-\\dfrac{2}{4}=\\dfrac{1}{4}$.<br><strong>Svar:</strong> $\\dfrac{1}{4}$`]),r(`1.51`,`Ganging av brøker: teller med teller, nevner med nevner.<br><br><strong>a)</strong> $\\dfrac{2}{3}\\cdot\\dfrac{3}{4}$<br><br><strong>b)</strong> $5\\cdot\\dfrac{2}{5}$<br><br><strong>c)</strong> $\\dfrac{1}{2}\\cdot\\dfrac{1}{3}$`,`Du kan forkorte på kryss før du ganger, hvis du vil.`,[`<strong>a)</strong> $\\dfrac{2\\cdot 3}{3\\cdot 4}=\\dfrac{6}{12}=\\dfrac{1}{2}$. (Eller stryk $3$: $\\dfrac{2}{4}=\\dfrac{1}{2}$.)<br><strong>Svar:</strong> $\\dfrac{1}{2}$`,`<strong>b)</strong> $5=\\dfrac{5}{1}$, så $\\dfrac{5\\cdot 2}{1\\cdot 5}=\\dfrac{10}{5}=2$.<br><strong>Svar:</strong> $2$`,`<strong>c)</strong> $\\dfrac{1\\cdot 1}{2\\cdot 3}=\\dfrac{1}{6}$.<br><strong>Svar:</strong> $\\dfrac{1}{6}$`]),r(`1.52`,`Å dele på en brøk er det samme som å gange med den omvendte.<br><br><strong>a)</strong> $\\dfrac{3}{4}:\\dfrac{1}{2}$<br><br><strong>b)</strong> $\\dfrac{2}{5}:\\dfrac{4}{15}$<br><br><strong>c)</strong> $6:\\dfrac{2}{3}$`,`Snu den bakerste brøken og gang. $6=\\dfrac{6}{1}$.`,[`<strong>a)</strong> $\\dfrac{3}{4}\\cdot\\dfrac{2}{1}=\\dfrac{6}{4}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`,`<strong>b)</strong> $\\dfrac{2}{5}\\cdot\\dfrac{15}{4}=\\dfrac{2\\cdot 15}{5\\cdot 4}=\\dfrac{30}{20}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`,`<strong>c)</strong> $\\dfrac{6}{1}\\cdot\\dfrac{3}{2}=\\dfrac{18}{2}=9$.<br><strong>Svar:</strong> $9$`]),r(`1.53`,`Blandede tall. Skriv om til uekte brøk først.<br><br><strong>a)</strong> Skriv $1\\dfrac{1}{2}$ som uekte brøk.<br><br><strong>b)</strong> $1\\dfrac{1}{2}+2\\dfrac{1}{4}$<br><br><strong>c)</strong> $2\\dfrac{1}{3}-\\dfrac{5}{6}$`,`$1\\dfrac{1}{2}=\\dfrac{3}{2}$. Finn fellesnevner etterpå.`,[`<strong>a)</strong> $1\\dfrac{1}{2}=\\dfrac{2}{2}+\\dfrac{1}{2}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`,`<strong>b)</strong> $\\dfrac{3}{2}+\\dfrac{9}{4}$. Fellesnevner $4$: $\\dfrac{6}{4}+\\dfrac{9}{4}=\\dfrac{15}{4}=3\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{15}{4}$`,`<strong>c)</strong> $2\\dfrac{1}{3}=\\dfrac{7}{3}$. Fellesnevner $6$: $\\dfrac{14}{6}-\\dfrac{5}{6}=\\dfrac{9}{6}=\\dfrac{3}{2}$.<br><strong>Svar:</strong> $\\dfrac{3}{2}$`]),r(`1C-E1`,`Hvilken brøk er størst? Utvide til fellesnevner og sammenlign tellerne.<br><br><strong>a)</strong> $\\dfrac{2}{3}$ eller $\\dfrac{3}{5}$<br><br><strong>b)</strong> $\\dfrac{5}{8}$ eller $\\dfrac{7}{12}$<br><br><strong>c)</strong> Sett i stigende rekkefølge: $\\dfrac{1}{2}$, $\\dfrac{2}{5}$, $\\dfrac{3}{4}$`,`Fellesnevner. Størst teller vinner når nevneren er lik.`,[`<strong>a)</strong> Fellesnevner $15$: $\\dfrac{10}{15}$ mot $\\dfrac{9}{15}$.<br><strong>Svar:</strong> $\\dfrac{2}{3}$ er størst`,`<strong>b)</strong> Fellesnevner $24$: $\\dfrac{15}{24}$ mot $\\dfrac{14}{24}$.<br><strong>Svar:</strong> $\\dfrac{5}{8}$ er størst`,`<strong>c)</strong> Fellesnevner $20$: $\\dfrac{10}{20}$, $\\dfrac{8}{20}$, $\\dfrac{15}{20}$.<br><strong>Svar:</strong> $\\dfrac{2}{5}<\\dfrac{1}{2}<\\dfrac{3}{4}$`]),r(`1C-E2`,`Regnerekkefølge: ganging før pluss, med mindre parentes sier noe annet.<br><br><strong>a)</strong> $\\dfrac{1}{2}+\\dfrac{1}{3}\\cdot\\dfrac{3}{4}$<br><br><strong>b)</strong> $\\left(\\dfrac{1}{2}+\\dfrac{1}{3}\\right)\\cdot\\dfrac{3}{4}$<br><br><strong>c)</strong> $1-\\dfrac{1}{2}\\cdot\\dfrac{2}{5}$`,`I a) ganger du først. I b) parentes først.`,[`<strong>a)</strong> $\\dfrac{1}{3}\\cdot\\dfrac{3}{4}=\\dfrac{1}{4}$. Så $\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$.<br><strong>Svar:</strong> $\\dfrac{3}{4}$`,`<strong>b)</strong> $\\dfrac{1}{2}+\\dfrac{1}{3}=\\dfrac{5}{6}$. Så $\\dfrac{5}{6}\\cdot\\dfrac{3}{4}=\\dfrac{15}{24}=\\dfrac{5}{8}$.<br><strong>Svar:</strong> $\\dfrac{5}{8}$`,`<strong>c)</strong> $\\dfrac{1}{2}\\cdot\\dfrac{2}{5}=\\dfrac{1}{5}$. Så $1-\\dfrac{1}{5}=\\dfrac{4}{5}$.<br><strong>Svar:</strong> $\\dfrac{4}{5}$`]),r(`1C-E3`,`En pizza er delt i $8$ like store stykker. Kari spiser $3$ stykker, og Ola spiser $2$.<br><br><strong>a)</strong> Hvilken brøkdel av pizzaen er spist?<br><br><strong>b)</strong> Hvilken brøkdel er igjen?<br><br><strong>c)</strong> Hvis pizzaen veier $640$ g, hvor mange gram er igjen?`,`Spist = summen av stykkene. Igjen = $1$ minus spist.`,[`<strong>a)</strong> $\\dfrac{3}{8}+\\dfrac{2}{8}=\\dfrac{5}{8}$.<br><strong>Svar:</strong> $\\dfrac{5}{8}$`,`<strong>b)</strong> $1-\\dfrac{5}{8}=\\dfrac{3}{8}$.<br><strong>Svar:</strong> $\\dfrac{3}{8}$`,`<strong>c)</strong> $\\dfrac{3}{8}\\cdot 640=3\\cdot 80=240$.<br><strong>Svar:</strong> $240$ g`]),r(`1C-E4`,`Fellesnevner som ikke er en av nevnerne selv.<br><br><strong>a)</strong> $\\dfrac{5}{12}+\\dfrac{1}{18}$<br><br><strong>b)</strong> $\\dfrac{5}{8}-\\dfrac{1}{12}$<br><br><strong>c)</strong> $\\dfrac{2}{9}+\\dfrac{1}{6}$`,`Finn MFM. For $12$ og $18$ er MFM $36$.`,[`<strong>a)</strong> MFM$(12,18)=36$. $\\dfrac{15}{36}+\\dfrac{2}{36}=\\dfrac{17}{36}$.<br><strong>Svar:</strong> $\\dfrac{17}{36}$`,`<strong>b)</strong> MFM$(8,12)=24$. $\\dfrac{15}{24}-\\dfrac{2}{24}=\\dfrac{13}{24}$.<br><strong>Svar:</strong> $\\dfrac{13}{24}$`,`<strong>c)</strong> MFM$(9,6)=18$. $\\dfrac{4}{18}+\\dfrac{3}{18}=\\dfrac{7}{18}$.<br><strong>Svar:</strong> $\\dfrac{7}{18}$`]),r(`1C-E5`,`Algebraiske brøker. Forkort så langt det går. Husk restriksjoner.<br><br><strong>a)</strong> $\\dfrac{12a}{18a}$ når $a\\neq 0$<br><br><strong>b)</strong> $\\dfrac{6x-9}{3}$<br><br><strong>c)</strong> $\\dfrac{x}{4}+\\dfrac{x}{6}$`,`Ta ut felles faktor i teller og nevner. I c) er $x$ felles i telleren etter sammenlegging.`,[`<strong>a)</strong> $\\dfrac{12a}{18a}=\\dfrac{12}{18}=\\dfrac{2}{3}$.<br><strong>Svar:</strong> $\\dfrac{2}{3}$`,`<strong>b)</strong> $\\dfrac{3(2x-3)}{3}=2x-3$.<br><strong>Svar:</strong> $2x-3$`,`<strong>c)</strong> Fellesnevner $12$: $\\dfrac{3x}{12}+\\dfrac{2x}{12}=\\dfrac{5x}{12}$.<br><strong>Svar:</strong> $\\dfrac{5x}{12}$`])],"2A":[r(`2.17`,`Forenkle.<br><br><strong>a)</strong> $7x-3-2x+8$<br><br><strong>b)</strong> $3(2x-1)-4(x+5)$<br><br><strong>c)</strong> $x(x+2)-x^2+6$`,`Samle like ledd. Husk å gange inn i parentesen, også med minus foran.`,[`<strong>a)</strong> $(7x-2x)+(-3+8)=5x+5$.<br><strong>Svar:</strong> $5x+5$`,`<strong>b)</strong> $6x-3-4x-20=2x-23$.<br><strong>Svar:</strong> $2x-23$`,`<strong>c)</strong> $x^2+2x-x^2+6=2x+6$.<br><strong>Svar:</strong> $2x+6$`]),r(`2.18`,`Løs opp parentesene og trekk sammen.<br><br><strong>a)</strong> $(x+3)(x-1)$<br><br><strong>b)</strong> $2(x-4)(x+1)$<br><br><strong>c)</strong> $(2a-3)^2 - (a+1)(a-1)$`,`FOIL / kvadratsetning. Trekk sammen like ledd til slutt.`,[`<strong>a)</strong> $x^2-x+3x-3=x^2+2x-3$.<br><strong>Svar:</strong> $x^2+2x-3$`,`<strong>b)</strong> Først $(x-4)(x+1)=x^2-3x-4$, gange med $2$: $2x^2-6x-8$.<br><strong>Svar:</strong> $2x^2-6x-8$`,`<strong>c)</strong> $(2a-3)^2=4a^2-12a+9$.<br>$(a+1)(a-1)=a^2-1$.<br>$4a^2-12a+9-(a^2-1)=3a^2-12a+10$.<br><strong>Svar:</strong> $3a^2-12a+10$`]),r(`2.19`,`En rektangulær ramme har ytre sider $x+5$ og $x+2$. Den indre åpningen har sider $x+1$ og $x$.<br><br><strong>a)</strong> Finn et forenklet uttrykk for arealet av rammen (det som er igjen når åpningen er trukket fra).<br><br><strong>b)</strong> Regn ut arealet når $x=4$.`,`Ytre areal minus indre areal. Gang ut før du trekker.`,[`<strong>a)</strong> $(x+5)(x+2)-(x+1)x = x^2+7x+10 - (x^2+x) = 6x+10$.<br><strong>Svar:</strong> $6x+10$`,`<strong>b)</strong> $6\\cdot 4+10=34$.<br><strong>Svar:</strong> $34$`])],"2B":[r(`2.20`,`Bruk kvadratsetningene.<br><br><strong>a)</strong> $(x+7)^2$<br><br><strong>b)</strong> $(3y-4)^2$<br><br><strong>c)</strong> $(2t+5)(2t-5)$`,`$(a+b)^2=a^2+2ab+b^2$, $(a-b)^2=a^2-2ab+b^2$, $(a+b)(a-b)=a^2-b^2$.`,[`<strong>a)</strong> $x^2+14x+49$.<br><strong>Svar:</strong> $x^2+14x+49$`,`<strong>b)</strong> $9y^2-24y+16$.<br><strong>Svar:</strong> $9y^2-24y+16$`,`<strong>c)</strong> $4t^2-25$.<br><strong>Svar:</strong> $4t^2-25$`]),r(`2.21`,`Regn ut uten kalkulator ved å bruke kvadratsetninger.<br><br><strong>a)</strong> $51^2$<br><br><strong>b)</strong> $49\\cdot 51$<br><br><strong>c)</strong> $103^2$`,`Skriv $51=50+1$, $49=50-1$, $103=100+3$.`,[`<strong>a)</strong> $(50+1)^2=2500+100+1=2601$.<br><strong>Svar:</strong> $2601$`,`<strong>b)</strong> $(50-1)(50+1)=2500-1=2499$.<br><strong>Svar:</strong> $2499$`,`<strong>c)</strong> $(100+3)^2=10000+600+9=10609$.<br><strong>Svar:</strong> $10609$`]),r(`2.22`,`Forenkle.<br><br><strong>a)</strong> $(x+3)^2-(x-3)^2$<br><br><strong>b)</strong> $(\\sqrt{7}+2)(\\sqrt{7}-2)$`,`Skriv ut kvadratsetningene, eller se at a) er differanse mellom to kvadrat.`,[`<strong>a)</strong> $(x^2+6x+9)-(x^2-6x+9)=12x$.<br><strong>Svar:</strong> $12x$`,`<strong>b)</strong> $7-4=3$.<br><strong>Svar:</strong> $3$`])],"2C":[r(`2.23`,`Faktoriser (sett felles faktor utenfor parentes).<br><br><strong>a)</strong> $12x-18$<br><br><strong>b)</strong> $6x^2+9x$<br><br><strong>c)</strong> $4a^2b-10ab^2$`,`Finn største felles tallfaktor og felles bokstaver med lavest potens.`,[`<strong>a)</strong> $6(2x-3)$. <strong>Svar:</strong> $6(2x-3)$`,`<strong>b)</strong> $3x(2x+3)$. <strong>Svar:</strong> $3x(2x+3)$`,`<strong>c)</strong> $2ab(2a-5b)$. <strong>Svar:</strong> $2ab(2a-5b)$`]),r(`2.24`,`<strong>a)</strong> Vis at $\\sqrt{48}-\\sqrt{12}=2\\sqrt{3}$.<br><br><strong>b)</strong> Faktoriser $x(x-5)+2(x-5)$.`,`Trekk ut kvadrattall under rota. I b) er $(x-5)$ felles faktor.`,[`<strong>a)</strong> $\\sqrt{48}=\\sqrt{16\\cdot 3}=4\\sqrt{3}$, $\\sqrt{12}=\\sqrt{4\\cdot 3}=2\\sqrt{3}$.<br>$4\\sqrt{3}-2\\sqrt{3}=2\\sqrt{3}$.<br><strong>Svar:</strong> vist.`,`<strong>b)</strong> $(x-5)(x+2)$.<br><strong>Svar:</strong> $(x-5)(x+2)$`])],"2D":[r(`2.25`,`Faktoriser.<br><br><strong>a)</strong> $x^2-9$<br><br><strong>b)</strong> $x^2+8x+16$<br><br><strong>c)</strong> $x^2-5x+6$`,`Differanse mellom to kvadrat, fullstendig kvadrat, eller to tall med produkt $c$ og sum $b$.`,[`<strong>a)</strong> $(x-3)(x+3)$. <strong>Svar:</strong> $(x-3)(x+3)$`,`<strong>b)</strong> $(x+4)^2$. <strong>Svar:</strong> $(x+4)^2$`,`<strong>c)</strong> $(x-2)(x-3)$. <strong>Svar:</strong> $(x-2)(x-3)$`]),r(`2.26`,`Faktoriser hvis det er mulig. Hvis ikke, forklar hvorfor.<br><br><strong>a)</strong> $x^2+4$<br><br><strong>b)</strong> $2x^2-8$<br><br><strong>c)</strong> $x^2+x-12$`,`$x^2+4$ er sum av kvadrat, ikke differanse. I b) ta ut $2$ først.`,[`<strong>a)</strong> $x^2+4=(x)^2+2^2$ er ikke differanse mellom to kvadrat (over reelle tall).<br><strong>Svar:</strong> kan ikke faktoriseres videre i $\\mathbb{R}$.`,`<strong>b)</strong> $2(x^2-4)=2(x-2)(x+2)$.<br><strong>Svar:</strong> $2(x-2)(x+2)$`,`<strong>c)</strong> $(x+4)(x-3)$.<br><strong>Svar:</strong> $(x+4)(x-3)$`])],"2E":[r(`2.27`,`Forkort.<br><br><strong>a)</strong> $\\dfrac{8x-12}{4}$<br><br><strong>b)</strong> $\\dfrac{x^2-9}{x-3}$ når $x\\neq 3$<br><br><strong>c)</strong> $\\dfrac{2x^2+6x}{2x}$ når $x\\neq 0$`,`Faktoriser teller (og nevner) før du stryker felles faktorer.`,[`<strong>a)</strong> $\\dfrac{4(2x-3)}{4}=2x-3$. <strong>Svar:</strong> $2x-3$`,`<strong>b)</strong> $\\dfrac{(x-3)(x+3)}{x-3}=x+3$. <strong>Svar:</strong> $x+3$`,`<strong>c)</strong> $\\dfrac{2x(x+3)}{2x}=x+3$. <strong>Svar:</strong> $x+3$`]),r(`2.28`,`Trekk sammen til én brøk.<br><br><strong>a)</strong> $\\dfrac{2}{x}+\\dfrac{3}{2x}$<br><br><strong>b)</strong> $\\dfrac{x}{x+1}-\\dfrac{1}{x+1}$`,`Fellesnevner. I b) er nevneren allerede lik.`,[`<strong>a)</strong> Fellesnevner $2x$: $\\dfrac{4}{2x}+\\dfrac{3}{2x}=\\dfrac{7}{2x}$.<br><strong>Svar:</strong> $\\dfrac{7}{2x}$`,`<strong>b)</strong> $\\dfrac{x-1}{x+1}$.<br><strong>Svar:</strong> $\\dfrac{x-1}{x+1}$`])],"2F":[r(`2.29`,`Et kvadrat har side $s$. Et rektangel har sider $s+2$ og $s-1$.<br><br><strong>a)</strong> Finn et uttrykk for differansen mellom rektangelets og kvadratets areal.<br><br><strong>b)</strong> For hvilken $s$ er arealene like store?`,`Areal kvadrat $s^2$, rektangel $(s+2)(s-1)$. Sett differansen lik $0$.`,[`<strong>a)</strong> $(s+2)(s-1)-s^2 = s^2+s-2-s^2 = s-2$.<br><strong>Svar:</strong> $s-2$`,`<strong>b)</strong> $s-2=0 \\Rightarrow s=2$.<br><strong>Svar:</strong> $s=2$`])],"3A":[r(`3.23`,`Løs likningene og sett prøve.<br><br><strong>a)</strong> $5x-7=2x+8$<br><br><strong>b)</strong> $3(x-2)=2x+9$<br><br><strong>c)</strong> $\\dfrac{x}{4}-\\dfrac{x}{6}=1$`,`Samle $x$ på én side. I c) gang med fellesnevner $12$.`,[`<strong>a)</strong> $5x-2x=8+7$, $3x=15$, $x=5$. Prøve: $25-7=10+8=18$.<br><strong>Svar:</strong> $x=5$`,`<strong>b)</strong> $3x-6=2x+9$, $x=15$.<br><strong>Svar:</strong> $x=15$`,`<strong>c)</strong> Gang med $12$: $3x-2x=12$, $x=12$.<br><strong>Svar:</strong> $x=12$`]),r(`3.24`,`Omkretsen av et rektangel er $54$ cm. Lengden er $3$ cm lenger enn dobbel bredde.<br>La $b$ være bredden. Sett opp en likning og finn sidene.`,`Omkrets $2(l+b)=54$. $l=2b+3$.`,[`$2((2b+3)+b)=54$, $2(3b+3)=54$, $3b+3=27$, $3b=24$, $b=8$.<br>Lengde $2\\cdot 8+3=19$.<br><strong>Svar:</strong> bredde $8$ cm, lengde $19$ cm.`]),r(`3.25`,`Løs ulikheten og skriv svaret både med ulikhetstegn og som intervall.<br><br><strong>a)</strong> $2x-5 < 7$<br><br><strong>b)</strong> $4-3x \\geq 10$`,`Samme flytteregler som for likninger. Når du ganger/deler med et negativt tall, snur ulikheten.`,[`<strong>a)</strong> $2x<12$, $x<6$. Intervall: $\\langle\\leftarrow, 6\\rangle$.<br><strong>Svar:</strong> $x<6$, $x\\in\\langle\\leftarrow,6\\rangle$`,`<strong>b)</strong> $-3x\\geq 6$. Del på $-3$ og snu: $x\\leq -2$.<br><strong>Svar:</strong> $x\\leq -2$, $x\\in\\langle\\leftarrow,-2]$`])],"3B":[r(`3.26`,`Formelen $s=v_0 t + \\dfrac{1}{2}at^2$ gir strekning ved konstant akselerasjon.<br><br><strong>a)</strong> Isoler $a$.<br><br><strong>b)</strong> Finn $a$ når $s=40$, $v_0=2$ og $t=4$.`,`Trekk fra $v_0 t$, gang med $2$ og del på $t^2$.`,[`<strong>a)</strong> $s-v_0 t=\\dfrac{1}{2}at^2$, $2(s-v_0 t)=at^2$, $a=\\dfrac{2(s-v_0 t)}{t^2}$.<br><strong>Svar:</strong> $a=\\dfrac{2(s-v_0 t)}{t^2}$`,`<strong>b)</strong> $a=\\dfrac{2(40-8)}{16}=\\dfrac{64}{16}=4$.<br><strong>Svar:</strong> $a=4$`]),r(`3.27`,`$\\dfrac{1}{R}=\\dfrac{1}{R_1}+\\dfrac{1}{R_2}$. Isoler $R$.`,`Fellesnevner $R_1 R_2$ på høyre side, deretter inverter begge sider.`,[`$\\dfrac{1}{R}=\\dfrac{R_2+R_1}{R_1 R_2}$, så $R=\\dfrac{R_1 R_2}{R_1+R_2}$.<br><strong>Svar:</strong> $R=\\dfrac{R_1 R_2}{R_1+R_2}$`])],"3C":[r(`3.28`,`Løs.<br><br><strong>a)</strong> $x^2=25$<br><br><strong>b)</strong> $(x-3)(x+1)=0$<br><br><strong>c)</strong> $x^2-6x=0$`,`Husk $\\pm$ når du tar kvadratrot. Produktregelen: et av faktorene er $0$.`,[`<strong>a)</strong> $x=\\pm 5$. <strong>Svar:</strong> $x=-5$ eller $x=5$`,`<strong>b)</strong> $x=3$ eller $x=-1$. <strong>Svar:</strong> $x=3$ eller $x=-1$`,`<strong>c)</strong> $x(x-6)=0$, så $x=0$ eller $x=6$. <strong>Svar:</strong> $x=0$ eller $x=6$`]),r(`3.29`,`Et rektangel har areal $48$ og den ene siden er $2$ lenger enn den andre. Finn sidene.`,`La bredden være $x$. Da er lengden $x+2$, og $x(x+2)=48$.`,[`$x^2+2x-48=0$. Faktoriser: $(x+8)(x-6)=0$.<br>$x=-8$ (gir ikke lengde) eller $x=6$.<br>Sider $6$ og $8$.<br><strong>Svar:</strong> $6$ og $8$`])],"3D":[r(`3.30`,`Løs med abc-formelen. Oppgi eksakt svar.<br><br><strong>a)</strong> $x^2-4x-1=0$<br><br><strong>b)</strong> $2x^2+x-6=0$`,`$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Forenkle rota hvis du kan.`,[`<strong>a)</strong> $a=1,b=-4,c=-1$. $D=16+4=20=4\\cdot 5$.<br>$x=\\dfrac{4\\pm 2\\sqrt{5}}{2}=2\\pm\\sqrt{5}$.<br><strong>Svar:</strong> $x=2+\\sqrt{5}$ eller $x=2-\\sqrt{5}$`,`<strong>b)</strong> $a=2,b=1,c=-6$. $D=1+48=49$.<br>$x=\\dfrac{-1\\pm 7}{4}$. $x=\\dfrac{6}{4}=\\dfrac{3}{2}$ eller $x=\\dfrac{-8}{4}=-2$.<br><strong>Svar:</strong> $x=\\dfrac{3}{2}$ eller $x=-2$`]),r(`3.31`,`Likningen $x^2-6x+k=0$ har nøyaktig én løsning. Finn $k$ og løsningen.`,`Én løsning $\\Leftrightarrow$ diskriminanten er $0$.`,[`$D=36-4k=0$, $k=9$. Da $x=\\dfrac{6}{2}=3$.<br><strong>Svar:</strong> $k=9$ og $x=3$`])],"3E":[r(`3.32`,`Løs og sjekk for falske løsninger.<br><br><strong>a)</strong> $\\dfrac{x+1}{x-2}=3$<br><br><strong>b)</strong> $\\dfrac{2}{x}=\\dfrac{x}{8}$`,`Gang med nevneren. $x$ kan ikke gjøre en nevner lik $0$.`,[`<strong>a)</strong> $x+1=3(x-2)$, $x+1=3x-6$, $7=2x$, $x=\\dfrac{7}{2}$. Nevner $x-2\\neq 0$. OK.<br><strong>Svar:</strong> $x=\\dfrac{7}{2}$`,`<strong>b)</strong> $16=x^2$, $x=\\pm 4$. Ingen av dem gir nevner $0$.<br><strong>Svar:</strong> $x=4$ eller $x=-4$`]),r(`3.33`,`$\\dfrac{x}{x-1}-\\dfrac{2}{x+1}=1$. Løs likningen.`,`Fellesnevner $(x-1)(x+1)=x^2-1$. Husk $x\\neq\\pm 1$.`,[`Gang med $(x-1)(x+1)$: $x(x+1)-2(x-1)=(x^2-1)$.<br>$x^2+x-2x+2=x^2-1$, $-x+2=-1$, $-x=-3$, $x=3$.<br>$x=3$ er tillatt.<br><strong>Svar:</strong> $x=3$`])],"3F":[r(`3.34`,`En oppskrift til $4$ personer bruker $3$ dl fløte. Du skal lage mat til $6$ personer.<br><br><strong>a)</strong> Sett opp en proporsjon og finn hvor mye fløte du trenger.<br><br><strong>b)</strong> Hvor mange personer kan du lage mat til med $9$ dl fløte?`,`Mengde og antall personer er proporsjonale. $\\dfrac{3}{4}=\\dfrac{x}{6}$.`,[`<strong>a)</strong> $\\dfrac{3}{4}=\\dfrac{x}{6}$, $x=\\dfrac{3\\cdot 6}{4}=4.5$.<br><strong>Svar:</strong> $4.5$ dl.`,`<strong>b)</strong> $\\dfrac{3}{4}=\\dfrac{9}{n}$, $3n=36$, $n=12$.<br><strong>Svar:</strong> $12$ personer.`]),r(`3.35`,`En bil bruker $0.6$ liter bensin per mil. Bensintanken rommer $48$ liter.<br><br><strong>a)</strong> Hvor langt kan bilen kjøre på en full tank?<br><br><strong>b)</strong> Hvor mye bensin trengs til $250$ km? (Ett mil $=10$ km.)`,`Forbruket er proporsjonalt med distansen.`,[`<strong>a)</strong> $48/0.6=80$ mil $=800$ km.<br><strong>Svar:</strong> $800$ km.`,`<strong>b)</strong> $250$ km $=25$ mil. $25\\cdot 0.6=15$.<br><strong>Svar:</strong> $15$ liter.`])],"3G":[r(`3.36`,`Utfør polynomdivisjonen $(x^2+5x+6):(x+2)$ og sett prøve.`,`Hvor mange ganger går $x$ i $x^2$? Gang tilbake og trekk fra.`,[`$(x^2+5x+6):(x+2)=x+3$ fordi $(x+2)(x+3)=x^2+5x+6$.<br><strong>Svar:</strong> $x+3$`]),r(`3.37`,`Polynomet $P(x)=x^3-2x^2-5x+6$ har et nullpunkt $x=1$.<br><br><strong>a)</strong> Del $P(x)$ på $(x-1)$.<br><br><strong>b)</strong> Faktoriser $P(x)$ fullstendig.`,`Restteoremet: $P(1)=0$ betyr at $(x-1)$ går opp. Faktoriser andregraden etterpå.`,[`<strong>a)</strong> $(x^3-2x^2-5x+6):(x-1)=x^2-x-6$.<br><strong>Svar:</strong> $x^2-x-6$`,`<strong>b)</strong> $x^2-x-6=(x-3)(x+2)$.<br>Dermed $P(x)=(x-1)(x-3)(x+2)$.<br><strong>Svar:</strong> $(x-1)(x-3)(x+2)$`])]},a={"1A":`1A Tallmengder og regneregler`,"1B":`1B Figurtall og mønstre`,"1C":`1C Faktorer og brøk`,"1D":`1D Potenser`,"1E":`1E Standardform`,"1F":`1F Logikk og bevis`,"1OP":`Øveprøve`,"2A":`2A Forenkle uttrykk`,"2B":`2B Kvadratsetninger`,"2C":`2C Felles faktor`,"2D":`2D Faktorisering`,"2E":`2E Algebraiske brøker`,"2F":`2F Figurer og mønstre`,"2OP":`Øveprøve`,"3A":`3A Førstegradslikninger`,"3B":`3B Formler`,"3C":`3C Andregradslikninger`,"3D":`3D ABC-formelen`,"3E":`3E Rasjonale likninger`,"3F":`3F Proporsjoner`,"3G":`3G Polynomdivisjon`,"3OP":`Øveprøve`,"4A":`4A Funksjonsbegrepet`,"4B":`4B Lineære funksjoner`,"4C":`4C Polynomfunksjoner`,"4D":`4D Rasjonale funksjoner`,"4E":`4E Potensfunksjoner`,"4F":`4F Eksponentialfunksjoner`,"4G":`4G Drøfting`,"4H":`4H Vekstfart og derivasjon`};function o(e,t,n,r,i){return{id:e,tittel:t,tekst:n,bilde:null,hint:r,fasit:null,fasitSteg:i,starter:``}}var s={id:`3OP`,tittel:`Øveprøve`,oppgaver:[o(`3.OP0`,`Øveprøve · Kapittel 3 (oversikt)`,`<strong>Tid:</strong> ca. 60–75 min<br><strong>Hjelpemidler:</strong> ingen (kun kladdeark)<br><br><strong>Instruks:</strong> Vis mellomregning. Sett prøve der det er naturlig. Oppgaver med flere bokstaver teller hver for seg.<br><br>Prøven dekker førstegradslikninger, formler, andregradslikninger, ABC-formelen, rasjonale likninger, ulikheter, proporsjoner og polynomdivisjon.`,`Les hele prøven først. Begynn med det du mestrer, og kom tilbake til de tyngre oppgavene.`,[`Dette er oversiktssiden. Gå videre til oppgave 1–10.`]),o(`3.OP1`,`Oppgave 1 — Førstegradslikninger`,`Løs likningene og sett prøve.<br><br><strong>a)</strong> $4x-7=2x+9$<br><br><strong>b)</strong> $3(x-4)=2(x+1)-5$<br><br><strong>c)</strong> $\\dfrac{x}{3}-\\dfrac{x}{5}=2$`,`Samle $x$ på én side. I c) gang med fellesnevner $15$.`,[`<strong>a)</strong> $4x-2x=9+7$, $2x=16$, $x=8$. Prøve: $32-7=16+9=25$.<br><strong>Svar:</strong> $x=8$`,`<strong>b)</strong> $3x-12=2x+2-5$, $3x-12=2x-3$, $x=9$.<br><strong>Svar:</strong> $x=9$`,`<strong>c)</strong> Gang med $15$: $5x-3x=30$, $2x=30$, $x=15$.<br><strong>Svar:</strong> $x=15$`]),o(`3.OP2`,`Oppgave 2 — Fra tekst til likning`,`Omkretsen av et rektangel er $64$ cm. Lengden er $4$ cm lenger enn tre ganger bredden.<br><br><strong>a)</strong> Sett opp en likning med $b$ som bredde.<br><br><strong>b)</strong> Finn sidene.`,`Omkrets $2(l+b)=64$. Lengde $l=3b+4$.`,[`<strong>a)</strong> $2((3b+4)+b)=64$, altså $2(4b+4)=64$.<br><strong>Svar:</strong> $2(4b+4)=64$ (eller $4b+4=32$)`,`<strong>b)</strong> $4b+4=32$, $4b=28$, $b=7$. Lengde $3\\cdot 7+4=25$.<br><strong>Svar:</strong> bredde $7$ cm, lengde $25$ cm.`]),o(`3.OP3`,`Oppgave 3 — Formler`,`Omkretsen av en sirkel er $C=2\\pi r$.<br><br><strong>a)</strong> Isoler $r$.<br><br><strong>b)</strong> Finn $r$ når $C=10\\pi$. Oppgi eksakt svar.`,`Del på $2\\pi$.`,[`<strong>a)</strong> $r=\\dfrac{C}{2\\pi}$.<br><strong>Svar:</strong> $r=\\dfrac{C}{2\\pi}$`,`<strong>b)</strong> $r=\\dfrac{10\\pi}{2\\pi}=5$.<br><strong>Svar:</strong> $r=5$`]),o(`3.OP4`,`Oppgave 4 — Andregrad ved faktorisering`,`Løs.<br><br><strong>a)</strong> $x^2-9=0$<br><br><strong>b)</strong> $x^2-7x+10=0$<br><br><strong>c)</strong> $2x^2-8x=0$`,`Produktregelen, eller ta ut felles faktor først.`,[`<strong>a)</strong> $(x-3)(x+3)=0$, $x=\\pm 3$.<br><strong>Svar:</strong> $x=-3$ eller $x=3$`,`<strong>b)</strong> $(x-2)(x-5)=0$.<br><strong>Svar:</strong> $x=2$ eller $x=5$`,`<strong>c)</strong> $2x(x-4)=0$.<br><strong>Svar:</strong> $x=0$ eller $x=4$`]),o(`3.OP5`,`Oppgave 5 — ABC-formelen`,`Løs med abc-formelen. Oppgi eksakt svar.<br><br><strong>a)</strong> $x^2-6x+4=0$<br><br><strong>b)</strong> $2x^2+x-6=0$`,`$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Forenkle rota.`,[`<strong>a)</strong> $a=1,b=-6,c=4$. $D=36-16=20=4\\cdot 5$.<br>$x=\\dfrac{6\\pm 2\\sqrt{5}}{2}=3\\pm\\sqrt{5}$.<br><strong>Svar:</strong> $x=3+\\sqrt{5}$ eller $x=3-\\sqrt{5}$`,`<strong>b)</strong> $a=2,b=1,c=-6$. $D=1+48=49$.<br>$x=\\dfrac{-1\\pm 7}{4}$. $x=\\dfrac{6}{4}=\\dfrac{3}{2}$ eller $x=-2$.<br><strong>Svar:</strong> $x=\\dfrac{3}{2}$ eller $x=-2$`]),o(`3.OP6`,`Oppgave 6 — Diskriminant`,`Likningen $x^2-4x+k=0$ har nøyaktig én løsning.<br><br><strong>a)</strong> Finn $k$.<br><br><strong>b)</strong> Finn løsningen.`,`Én løsning $\\Leftrightarrow$ $D=0$.`,[`<strong>a)</strong> $D=16-4k=0$, $k=4$.<br><strong>Svar:</strong> $k=4$`,`<strong>b)</strong> $x=\\dfrac{4}{2}=2$.<br><strong>Svar:</strong> $x=2$`]),o(`3.OP7`,`Oppgave 7 — Rasjonale likninger`,`Løs og sjekk for falske løsninger.<br><br><strong>a)</strong> $\\dfrac{x+2}{x-1}=3$<br><br><strong>b)</strong> $\\dfrac{2}{x}=\\dfrac{x}{8}$`,`Gang med nevneren. $x$ kan ikke gjøre en nevner lik $0$.`,[`<strong>a)</strong> $x+2=3(x-1)$, $x+2=3x-3$, $5=2x$, $x=\\dfrac{5}{2}$. Nevner OK.<br><strong>Svar:</strong> $x=\\dfrac{5}{2}$`,`<strong>b)</strong> $16=x^2$, $x=\\pm 4$. Ingen gir nevner $0$.<br><strong>Svar:</strong> $x=4$ eller $x=-4$`]),o(`3.OP8`,`Oppgave 8 — Ulikheter`,`Løs og skriv svaret både med ulikhetstegn og som intervall.<br><br><strong>a)</strong> $3x-4 < 8$<br><br><strong>b)</strong> $5-2x \\geq 11$`,`Når du deler på et negativt tall, snur ulikheten.`,[`<strong>a)</strong> $3x<12$, $x<4$. Intervall $\\langle\\leftarrow,4\\rangle$.<br><strong>Svar:</strong> $x<4$`,`<strong>b)</strong> $-2x\\geq 6$. Del på $-2$ og snu: $x\\leq -3$.<br><strong>Svar:</strong> $x\\leq -3$, $x\\in\\langle\\leftarrow,-3]$`]),o(`3.OP9`,`Oppgave 9 — Proporsjoner`,`En oppskrift til $5$ personer bruker $200$ g ost. Du skal lage mat til $8$ personer.<br><br><strong>a)</strong> Sett opp en proporsjon og finn hvor mye ost du trenger.<br><br><strong>b)</strong> Hvor mange personer kan du lage mat til med $360$ g ost?`,`$\\dfrac{200}{5}=\\dfrac{x}{8}$.`,[`<strong>a)</strong> $x=\\dfrac{200\\cdot 8}{5}=320$.<br><strong>Svar:</strong> $320$ g`,`<strong>b)</strong> $\\dfrac{200}{5}=\\dfrac{360}{n}$, $200n=1800$, $n=9$.<br><strong>Svar:</strong> $9$ personer.`]),o(`3.OP10`,`Oppgave 10 — Polynomdivisjon`,`Polynomet $P(x)=x^3-4x^2+x+6$ har et nullpunkt $x=2$.<br><br><strong>a)</strong> Vis at $P(2)=0$.<br><br><strong>b)</strong> Del $P(x)$ på $(x-2)$.<br><br><strong>c)</strong> Faktoriser $P(x)$ fullstendig.`,`Restteoremet: $P(2)=0$ betyr at $(x-2)$ går opp. Faktoriser andregraden etterpå.`,[`<strong>a)</strong> $P(2)=8-16+2+6=0$.<br><strong>Svar:</strong> vist, $P(2)=0$.`,`<strong>b)</strong> $(x^3-4x^2+x+6):(x-2)=x^2-2x-3$.<br><strong>Svar:</strong> $x^2-2x-3$`,`<strong>c)</strong> $x^2-2x-3=(x-3)(x+1)$.<br>Dermed $P(x)=(x-2)(x-3)(x+1)$.<br><strong>Svar:</strong> $(x-2)(x-3)(x+1)$`])],quiz:[{sporsmal:`Løs $5x-3=2x+9$.`,alternativer:[`$x=2$`,`$x=4$`,`$x=6$`,`$x=12$`],riktigSvar:1,forklaring:`$5x-2x=9+3$, $3x=12$, $x=4$.`},{sporsmal:`Hva skjer med ulikheten når du deler på et negativt tall?`,alternativer:[`Ingenting`,`Ulikheten snur`,`Løsningen blir 0`,`Ulikheten blir en likning`],riktigSvar:1,forklaring:`Når du ganger eller deler med et negativt tall, må ulikhetstegnet snus.`},{sporsmal:`Hvor mange løsninger har $x^2-6x+9=0$?`,alternativer:[`Ingen`,`Én`,`To ulike`,`Uendelig mange`],riktigSvar:1,forklaring:`$D=36-36=0$, så nøyaktig én løsning ($x=3$).`},{sporsmal:`ABC-formelen er $x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$. Hva kalles $b^2-4ac$?`,alternativer:[`Koeffisienten`,`Diskriminanten`,`Konstantleddet`,`Nullpunktet`],riktigSvar:1,forklaring:`Diskriminanten $D=b^2-4ac$ avgjør antall reelle løsninger.`},{sporsmal:`Når du løser $\\dfrac{x+1}{x-2}=4$, hvilken verdi er forbudt?`,alternativer:[`$x=0$`,`$x=1$`,`$x=2$`,`$x=4$`],riktigSvar:2,forklaring:`Nevneren $x-2$ kan ikke være $0$, så $x\\neq 2$.`},{sporsmal:`Faktoriser $x^2-5x+6$.`,alternativer:[`$(x-1)(x-6)$`,`$(x-2)(x-3)$`,`$(x+2)(x+3)$`,`$(x-6)(x+1)$`],riktigSvar:1,forklaring:`To tall med produkt $6$ og sum $-5$ er $-2$ og $-3$.`},{sporsmal:`Hvis $P(3)=0$, hva vet du om polynomet $P$?`,alternativer:[`$(x+3)$ er en faktor`,`$(x-3)$ er en faktor`,`Polynomet har grad 3`,`Polynomet har ingen reelle røtter`],riktigSvar:1,forklaring:`Restteoremet: $P(a)=0$ $\\Leftrightarrow$ $(x-a)$ er en faktor. Her $a=3$.`},{sporsmal:`$\\dfrac{3}{4}=\\dfrac{x}{12}$. Hva er $x$?`,alternativer:[`$6$`,`$8$`,`$9$`,`$16$`],riktigSvar:2,forklaring:`Kryssprodukt: $3\\cdot 12=4x$, $x=9$.`}]},c=`<p class="brok-lead">Tallmengdene forteller <strong>hvilken type tall</strong> vi snakker om. Trykk på et kort for å hoppe til temaet.</p>
+
+<nav class="brok-overview" aria-label="Hoppe til tema">
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-oversikt"><span>1</span>Oversikt</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-n"><span>2</span>ℕ</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-z"><span>3</span>ℤ</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-q"><span>4</span>ℚ</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-irr"><span>5</span>Irrasjonale</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-r"><span>6</span>ℝ</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-element"><span>7</span>∈ / ∉</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-intervall"><span>8</span>Intervaller</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-abs"><span>9</span>$|x|$</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="tm-sjekkliste"><span>✓</span>Sjekkliste</button>
+</nav>
+
+<section class="brok-section" id="tm-oversikt">
+  <div class="brok-section-head">
+    <div class="brok-num">1</div>
+    <h4>Oversikt</h4>
+  </div>
+  <p>Mengdene ligger inni hverandre. Hvert nytt skall tar med <strong>flere</strong> tall:</p>
+  <div class="brok-math">$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$</div>
+  <p>$\\subset$ betyr «er en delmengde av». Alle naturlige tall er hele tall, alle hele tall er rasjonale, og alle rasjonale tall er reelle.</p>
+  <div class="brok-visual">
+    <figure style="width:100%;max-width:640px">
+      <svg viewBox="0 0 640 268" width="100%" role="img" aria-label="Nøstede tallmengder N inne i Z inne i Q inne i R">
+        <rect x="12" y="10" width="616" height="248" rx="18" class="tm-fill-r tm-stroke-r"/>
+        <rect x="12" y="10" width="430" height="248" rx="16" class="tm-fill-q tm-stroke-q"/>
+        <rect x="12" y="10" width="278" height="248" rx="14" class="tm-fill-z tm-stroke-z"/>
+        <rect x="12" y="10" width="148" height="248" rx="12" class="tm-fill-n"/>
+        <text x="86" y="42" text-anchor="middle" class="brok-svg-on-fill" font-size="18" font-weight="800">ℕ</text>
+        <text x="86" y="64" text-anchor="middle" class="brok-svg-on-fill" font-size="11">naturlige</text>
+        <text x="86" y="140" text-anchor="middle" class="brok-svg-on-fill" font-size="13">1, 2, 3, …</text>
+        <text x="213" y="42" text-anchor="middle" class="brok-svg-text" font-size="18" font-weight="800">ℤ</text>
+        <text x="213" y="64" text-anchor="middle" class="brok-svg-muted" font-size="11">hele tall</text>
+        <text x="213" y="140" text-anchor="middle" class="brok-svg-text" font-size="13">…, −1, 0</text>
+        <text x="354" y="42" text-anchor="middle" class="brok-svg-text" font-size="18" font-weight="800">ℚ</text>
+        <text x="354" y="64" text-anchor="middle" class="brok-svg-muted" font-size="11">rasjonale</text>
+        <text x="354" y="132" text-anchor="middle" class="brok-svg-text" font-size="13">½, −¾</text>
+        <text x="354" y="152" text-anchor="middle" class="brok-svg-text" font-size="13">0,333…</text>
+        <text x="534" y="42" text-anchor="middle" class="brok-svg-text" font-size="18" font-weight="800">ℝ</text>
+        <text x="534" y="64" text-anchor="middle" class="brok-svg-muted" font-size="11">reelle</text>
+        <text x="534" y="128" text-anchor="middle" class="brok-svg-text" font-size="13">√2, π</text>
+        <text x="534" y="148" text-anchor="middle" class="brok-svg-muted" font-size="11">(irrasjonale)</text>
+      </svg>
+      <figcaption>Hvert skall utvider mengden. Irrasjonale tall ligger i $\\mathbb{R}$, men utenfor $\\mathbb{Q}$.</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-ok">
+    <strong>Husk:</strong> $\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$. Det motsatte er usant: $\\mathbb{R} \\not\\subset \\mathbb{Q}$.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-n">
+  <div class="brok-section-head">
+    <div class="brok-num">2</div>
+    <h4>Naturlige tall $\\mathbb{N}$</h4>
+  </div>
+  <p>De naturlige tallene er <strong>tellingstallene</strong> — positive heltall:</p>
+  <div class="brok-math">$\\mathbb{N} = \\{1, 2, 3, 4, \\ldots\\}$</div>
+  <div class="brok-visual">
+    <figure style="width:100%;max-width:520px">
+      <svg viewBox="0 0 520 90" width="100%" aria-hidden="true">
+        <line x1="20" y1="40" x2="500" y2="40" class="tm-axis"/>
+        <polygon points="500,40 486,34 486,46" class="tm-axis-fill"/>
+        <g class="brok-svg-muted" font-size="11" text-anchor="middle">
+          <text x="70" y="78">0</text>
+          <text x="140" y="78">1</text>
+          <text x="210" y="78">2</text>
+          <text x="280" y="78">3</text>
+          <text x="350" y="78">4</text>
+          <text x="420" y="78">5</text>
+        </g>
+        <circle cx="70" cy="40" r="5" class="tm-dot-open"/>
+        <circle cx="140" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="210" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="280" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="350" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="420" cy="40" r="6" class="tm-dot-closed"/>
+      </svg>
+      <figcaption>$0$ er <strong>ikke</strong> med i $\\mathbb{N}$ slik vi bruker det i 1T.</figcaption>
+    </figure>
+  </div>
+  <ul class="brok-list">
+    <li>Eksempler: $1$, $17$, $\\sqrt{16}=4$</li>
+    <li>Ikke med: $0$, $-3$, $\\dfrac{1}{2}$</li>
+  </ul>
+  <div class="brok-box brok-box-tip">
+    <strong>Null?</strong> Noen bøker tar med $0$ i $\\mathbb{N}$. I 1T bruker vi $\\mathbb{N} = \\{1,2,3,\\ldots\\}$. Når $0$ skal være med, skriver vi $\\mathbb{N}_0 = \\{0,1,2,\\ldots\\}$.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-z">
+  <div class="brok-section-head">
+    <div class="brok-num">3</div>
+    <h4>Hele tall $\\mathbb{Z}$</h4>
+  </div>
+  <p>Hele tall tar med <strong>null og de negative</strong>:</p>
+  <div class="brok-math">$\\mathbb{Z} = \\{\\ldots, -3, -2, -1, 0, 1, 2, 3, \\ldots\\}$</div>
+  <div class="brok-visual">
+    <figure style="width:100%;max-width:560px">
+      <svg viewBox="0 0 560 90" width="100%" aria-hidden="true">
+        <line x1="16" y1="40" x2="544" y2="40" class="tm-axis"/>
+        <polygon points="16,40 30,34 30,46" class="tm-axis-fill"/>
+        <polygon points="544,40 530,34 530,46" class="tm-axis-fill"/>
+        <g class="brok-svg-muted" font-size="11" text-anchor="middle">
+          <text x="70" y="78">−3</text>
+          <text x="140" y="78">−2</text>
+          <text x="210" y="78">−1</text>
+          <text x="280" y="78">0</text>
+          <text x="350" y="78">1</text>
+          <text x="420" y="78">2</text>
+          <text x="490" y="78">3</text>
+        </g>
+        <circle cx="70" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="140" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="210" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="280" cy="40" r="7" class="tm-dot-accent"/>
+        <circle cx="350" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="420" cy="40" r="6" class="tm-dot-closed"/>
+        <circle cx="490" cy="40" r="6" class="tm-dot-closed"/>
+      </svg>
+      <figcaption>Hele tallinja av prikker — men fortsatt bare heltall, ikke brøker.</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-example">
+    $\\mathbb{N} \\subset \\mathbb{Z}$: alle naturlige tall er hele tall, men $-5 \\in \\mathbb{Z}$ og $-5 \\notin \\mathbb{N}$.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-q">
+  <div class="brok-section-head">
+    <div class="brok-num">4</div>
+    <h4>Rasjonale tall $\\mathbb{Q}$</h4>
+  </div>
+  <p>Et tall er rasjonalt hvis det kan skrives som brøk av <strong>to heltall</strong>:</p>
+  <div class="brok-math">$\\mathbb{Q} = \\left\\{\\dfrac{a}{b} \\mid a \\in \\mathbb{Z},\\ b \\in \\mathbb{Z},\\ b \\neq 0\\right\\}$</div>
+  <h5>Slik kjenner du dem igjen</h5>
+  <ul class="brok-list">
+    <li>Alle heltall: $-5 = \\dfrac{-5}{1}$</li>
+    <li>Vanlige brøker: $\\dfrac{3}{4}$, $-\\dfrac{1}{2}$</li>
+    <li>Endelige desimaler: $4{,}2 = \\dfrac{21}{5}$</li>
+    <li>Uendelige <strong>periodiske</strong> desimaler: $0{,}333\\ldots = \\dfrac{1}{3}$</li>
+  </ul>
+  <div class="brok-box brok-box-example">
+    <strong>Fra 1A:</strong> $-5$, $\\sqrt{16}=4$, $\\dfrac{3}{4}$ og $0{,}333\\ldots$ er rasjonale. $\\pi$ og $\\sqrt{7}$ er det ikke.
+  </div>
+  <div class="brok-box brok-box-tip">
+    <strong>Fallgruve:</strong> $3{,}14$ er rasjonalt, men det er <em>ikke</em> $\\pi$. $\\dfrac{22}{7}$ er en tilnærming til $\\pi$, ikke $\\pi$ selv.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-irr">
+  <div class="brok-section-head">
+    <div class="brok-num">5</div>
+    <h4>Irrasjonale tall</h4>
+  </div>
+  <p>Irrasjonale tall <strong>kan ikke</strong> skrives som brøk $\\dfrac{a}{b}$ av to heltall. Desimalutviklingen er uendelig og <strong>uten periode</strong>.</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 240 88" width="220" aria-hidden="true">
+        <rect x="8" y="18" width="224" height="52" rx="10" class="tm-fill-q tm-stroke-q"/>
+        <text x="120" y="40" text-anchor="middle" class="brok-svg-text" font-size="13" font-weight="700">0,333333…</text>
+        <text x="120" y="58" text-anchor="middle" class="brok-svg-muted" font-size="11">periode 3 → rasjonalt</text>
+      </svg>
+      <figcaption>$0{,}\\overline{3} = \\dfrac{1}{3} \\in \\mathbb{Q}$</figcaption>
+    </figure>
+    <span class="brok-eq">≠</span>
+    <figure>
+      <svg viewBox="0 0 240 88" width="220" aria-hidden="true">
+        <rect x="8" y="18" width="224" height="52" rx="10" class="tm-fill-r tm-stroke-r"/>
+        <text x="120" y="40" text-anchor="middle" class="brok-svg-text" font-size="13" font-weight="700">3,141592…</text>
+        <text x="120" y="58" text-anchor="middle" class="brok-svg-muted" font-size="11">ingen periode → irrasjonalt</text>
+      </svg>
+      <figcaption>$\\pi \\notin \\mathbb{Q}$</figcaption>
+    </figure>
+  </div>
+  <ul class="brok-list">
+    <li>Klassikere: $\\pi$, $e$, $\\sqrt{2}$, $\\sqrt{7}$</li>
+    <li>$\\sqrt{n}$ er irrasjonal når $n$ <strong>ikke</strong> er et perfekt kvadrat</li>
+    <li>$\\sqrt{16}=4$ er <strong>rasjonal</strong> (og til og med naturlig)</li>
+  </ul>
+  <div class="brok-box brok-box-ok">
+    Irrasjonale tall = alle reelle tall som <strong>ikke</strong> er rasjonale: $\\mathbb{R} \\setminus \\mathbb{Q}$.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-r">
+  <div class="brok-section-head">
+    <div class="brok-num">6</div>
+    <h4>Reelle tall $\\mathbb{R}$</h4>
+  </div>
+  <p>De reelle tallene er <strong>hele tallinja</strong> — rasjonale og irrasjonale samlet.</p>
+  <div class="brok-math">$\\mathbb{R} = \\mathbb{Q} \\cup \\{\\text{irrasjonale tall}\\}$</div>
+  <div class="brok-visual">
+    <figure style="width:100%;max-width:580px">
+      <svg viewBox="0 0 580 110" width="100%" aria-hidden="true">
+        <line x1="16" y1="48" x2="564" y2="48" class="tm-axis"/>
+        <polygon points="16,48 30,42 30,54" class="tm-axis-fill"/>
+        <polygon points="564,48 550,42 550,54" class="tm-axis-fill"/>
+        <circle cx="80" cy="48" r="5" class="tm-dot-closed"/>
+        <circle cx="200" cy="48" r="5" class="tm-dot-closed"/>
+        <circle cx="290" cy="48" r="5" class="tm-dot-accent"/>
+        <circle cx="380" cy="48" r="5" class="tm-dot-closed"/>
+        <circle cx="470" cy="48" r="5" class="tm-dot-closed"/>
+        <g class="brok-svg-text" font-size="12" text-anchor="middle">
+          <text x="80" y="78">−2</text>
+          <text x="200" y="78">0</text>
+          <text x="290" y="78">½</text>
+          <text x="380" y="78">√2</text>
+          <text x="470" y="78">π</text>
+        </g>
+        <text x="80" y="24" text-anchor="middle" class="brok-svg-muted" font-size="10">ℤ</text>
+        <text x="200" y="24" text-anchor="middle" class="brok-svg-muted" font-size="10">ℤ</text>
+        <text x="290" y="24" text-anchor="middle" class="brok-svg-muted" font-size="10">ℚ</text>
+        <text x="380" y="24" text-anchor="middle" class="brok-svg-muted" font-size="10">irrasjonal</text>
+        <text x="470" y="24" text-anchor="middle" class="brok-svg-muted" font-size="10">irrasjonal</text>
+      </svg>
+      <figcaption>Alle disse punktene ligger i $\\mathbb{R}$.</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-tip">
+    Utenfor $\\mathbb{R}$ finnes blant annet komplekse tall $\\mathbb{C}$. Det tar vi ikke i 1T.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-element">
+  <div class="brok-section-head">
+    <div class="brok-num">7</div>
+    <h4>Element i og ikke element i</h4>
+  </div>
+  <p>Vi bruker $\\in$ og $\\notin$ for å si om et <strong>tall</strong> ligger i en mengde.</p>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead>
+        <tr><th>Symbol</th><th>Leses</th><th>Betydning</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$a \\in A$</td><td>«$a$ er element i $A$»</td><td>$a$ tilhører mengden $A$</td></tr>
+        <tr><td>$a \\notin A$</td><td>«$a$ er ikke element i $A$»</td><td>$a$ tilhører ikke $A$</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="brok-box brok-box-example">
+    <div class="brok-math">$4{,}2 \\in \\mathbb{Q}$ fordi $4{,}2 = \\dfrac{21}{5}$</div>
+    <div class="brok-math">$-3 \\notin \\mathbb{N}$ fordi $-3$ ikke er et positivt heltall</div>
+    <div class="brok-math">$\\sqrt{2} \\in \\mathbb{R}$ og $\\sqrt{2} \\notin \\mathbb{Q}$</div>
+  </div>
+  <h5>Mengdekrøll og vilkår</h5>
+  <p>Krøllparenteser $\\{\\ \\}$ lister opp elementene, eller beskriver dem med en regel:</p>
+  <ul class="brok-list">
+    <li>$\\{2, 4, 6, 8\\}$ — partall under $10$</li>
+    <li>$\\{x \\in \\mathbb{N} \\mid x \\lt 10\\}$ — alle naturlige tall mindre enn $10$</li>
+  </ul>
+  <div class="brok-box brok-box-tip">
+    <strong>Ikke bland:</strong> $\\in$ er for <em>elementer</em> ($5 \\in \\mathbb{N}$). $\\subset$ er for <em>mengder</em> ($\\mathbb{N} \\subset \\mathbb{Z}$).
+  </div>
+</section>
+
+<section class="brok-section" id="tm-intervall">
+  <div class="brok-section-head">
+    <div class="brok-num">8</div>
+    <h4>Intervaller</h4>
+  </div>
+  <p>Et intervall er alle reelle tall mellom to grenser. Parentesen forteller om endepunktet er <strong>med</strong> eller <strong>ikke</strong>.</p>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead>
+        <tr><th>Notasjon</th><th>Ulikhet</th><th>Endepunkt</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$[a, b]$</td><td>$a \\le x \\le b$</td><td>begge med</td></tr>
+        <tr><td>$\\langle a, b \\rangle$ eller $(a, b)$</td><td>$a \\lt x \\lt b$</td><td>ingen med</td></tr>
+        <tr><td>$[a, b\\rangle$ eller $[a, b)$</td><td>$a \\le x \\lt b$</td><td>bare $a$ med</td></tr>
+        <tr><td>$\\langle a, b]$ eller $(a, b]$</td><td>$a \\lt x \\le b$</td><td>bare $b$ med</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>I 1T brukes ofte vinkelparentes $\\langle\\ \\rangle$ for åpen ende. Vanlig parentes $(\\ )$ betyr det samme.</p>
+  <div class="brok-visual">
+    <figure style="width:100%;max-width:560px">
+      <svg viewBox="0 0 560 100" width="100%" aria-label="Intervallet fra og med -2 til men ikke med 8">
+        <line x1="24" y1="48" x2="536" y2="48" class="tm-axis"/>
+        <line x1="80" y1="48" x2="470" y2="48" class="tm-interval-line"/>
+        <circle cx="80" cy="48" r="8" class="tm-dot-closed"/>
+        <circle cx="470" cy="48" r="8" class="tm-dot-open"/>
+        <g class="brok-svg-muted" font-size="12" text-anchor="middle">
+          <text x="80" y="80">−2</text>
+          <text x="210" y="80">0</text>
+          <text x="340" y="80">4</text>
+          <text x="470" y="80">8</text>
+        </g>
+        <text x="275" y="28" text-anchor="middle" class="brok-svg-text" font-size="13" font-weight="700">[−2, 8⟩</text>
+      </svg>
+      <figcaption>Fylt prikk = inkludert. Åpen prikk = ikke inkludert. $-2 \\le x \\lt 8$.</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-example">
+    $-2 \\le x \\lt 8$ skrives $x \\in [-2, 8\\rangle$.
+  </div>
+  <h5>Snitt og union</h5>
+  <ul class="brok-list">
+    <li>$A \\cap B$ — tall som ligger i <strong>begge</strong></li>
+    <li>$A \\cup B$ — tall som ligger i <strong>minst én</strong> av dem</li>
+  </ul>
+  <div class="brok-box brok-box-example">
+    $[0, 4] \\cap (2, 6) = (2, 4]$
+  </div>
+  <div class="brok-box brok-box-tip">
+    Et intervall er <strong>ikke</strong> det samme som en liste av heltall. $[-3{,}5,\\ 2{,}1]$ inneholder uendelig mange reelle tall, men bare heltallene $-3,-2,-1,0,1,2$.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-abs">
+  <div class="brok-section-head">
+    <div class="brok-num">9</div>
+    <h4>Absoluttverdi $|x|$</h4>
+  </div>
+  <p>$|x|$ er <strong>avstanden</strong> fra $x$ til $0$ på tallinja. Avstand er aldri negativ.</p>
+  <p>$|x| = x$ når $x \\ge 0$, og $|x| = -x$ når $x \\lt 0$.</p>
+  <div class="brok-visual">
+    <figure style="width:100%;max-width:520px">
+      <svg viewBox="0 0 520 110" width="100%" aria-hidden="true">
+        <line x1="20" y1="56" x2="500" y2="56" class="tm-axis"/>
+        <polygon points="20,56 34,50 34,62" class="tm-axis-fill"/>
+        <polygon points="500,56 486,50 486,62" class="tm-axis-fill"/>
+        <circle cx="260" cy="56" r="5" class="tm-dot-accent"/>
+        <circle cx="80" cy="56" r="6" class="tm-dot-closed"/>
+        <circle cx="440" cy="56" r="6" class="tm-dot-closed"/>
+        <line x1="80" y1="40" x2="260" y2="40" class="tm-interval-line"/>
+        <line x1="260" y1="40" x2="440" y2="40" class="tm-interval-accent"/>
+        <text x="260" y="92" text-anchor="middle" class="brok-svg-muted" font-size="12">0</text>
+        <text x="80" y="92" text-anchor="middle" class="brok-svg-text" font-size="12">−7</text>
+        <text x="440" y="92" text-anchor="middle" class="brok-svg-text" font-size="12">7</text>
+        <text x="170" y="28" text-anchor="middle" class="brok-svg-muted" font-size="11">avstand 7</text>
+        <text x="350" y="28" text-anchor="middle" class="brok-svg-muted" font-size="11">avstand 7</text>
+      </svg>
+      <figcaption>$|-7| = 7$ og $|7| = 7$. Samme avstand til origo.</figcaption>
+    </figure>
+  </div>
+  <h5>Likninger med absoluttverdi</h5>
+  <p>$|x| = a$ (når $a \\gt 0$) har <strong>to</strong> løsninger: $x = a$ eller $x = -a$.</p>
+  <p>$|x - c| = r$ betyr «avstand fra $c$ er $r$»:</p>
+  <div class="brok-box brok-box-example">
+    $|x - 2| = 5$ gir $x = 7$ eller $x = -3$.
+  </div>
+  <div class="brok-box brok-box-ok">
+    Regn først inni, deretter absoluttverdi: $|3-8| = |-5| = 5$.
+  </div>
+</section>
+
+<section class="brok-section" id="tm-sjekkliste">
+  <div class="brok-section-head">
+    <div class="brok-num">✓</div>
+    <h4>Hurtigsjekkliste</h4>
+  </div>
+  <h5>Hvilken mengde?</h5>
+  <ol class="brok-list">
+    <li>Heltall og positivt (ikke $0$)? → $\\mathbb{N}$</li>
+    <li>Heltall (også $0$ eller negativt)? → $\\mathbb{Z}$</li>
+    <li>Kan skrives som brøk $a/b$? → $\\mathbb{Q}$</li>
+    <li>På tallinja, men ikke brøk? → irrasjonal, likevel i $\\mathbb{R}$</li>
+  </ol>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead>
+        <tr><th>Tall</th><th>ℕ</th><th>ℤ</th><th>ℚ</th><th>ℝ</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$4$</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>$0$</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>$-3$</td><td>✗</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>$\\frac{3}{4}$</td><td>✗</td><td>✗</td><td>✓</td><td>✓</td></tr>
+        <tr><td>$\\sqrt{16}$</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>$\\sqrt{2}$</td><td>✗</td><td>✗</td><td>✗</td><td>✓</td></tr>
+        <tr><td>$\\pi$</td><td>✗</td><td>✗</td><td>✗</td><td>✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="brok-box brok-box-tip">
+    <strong>Før prøven:</strong> $\\sqrt{16}=4 \\in \\mathbb{N}$. $3{,}14 \\neq \\pi$. $0 \\notin \\mathbb{N}$. $\\in$ for tall, $\\subset$ for mengder. Fylt prikk = med i intervallet.
+  </div>
+</section>
+`,l=`<p class="brok-lead">Fra det helt grunnleggende til algebraiske brøker. Trykk på et kort for å hoppe til temaet.</p>
+
+<nav class="brok-overview" aria-label="Hoppe til tema">
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-hva-er-brok"><span>1</span>Hva er en brøk?</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-grunnregler"><span>2</span>Grunnregler</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-addisjon"><span>3</span>+ og −</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-multiplikasjon"><span>4</span>×</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-divisjon"><span>5</span>÷</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-algebra"><span>6</span>Algebra</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="brok-sjekkliste"><span>✓</span>Sjekkliste</button>
+</nav>
+
+<section class="brok-section" id="brok-hva-er-brok">
+  <div class="brok-section-head">
+    <div class="brok-num">1</div>
+    <h4>Hva er en brøk?</h4>
+  </div>
+  <p>En <strong>brøk</strong> viser et delingsforhold mellom to tall.</p>
+  <ul class="brok-list">
+    <li><strong>Telleren</strong> (oppe) = hvor mange deler vi har</li>
+    <li><strong>Nevneren</strong> (nede) = hvor mange like store deler helheten er delt i</li>
+  </ul>
+  <div class="brok-visual">
+    <figure>
+      <svg class="frac-svg" viewBox="0 0 100 100" width="130" aria-hidden="true">
+        <circle cx="50" cy="50" r="45" class="brok-empty"/>
+        <path d="M50 50 L50 5 A45 45 0 0 1 95 50 Z" class="brok-filled"/>
+        <path d="M50 50 L95 50 A45 45 0 0 1 50 95 Z" class="brok-filled"/>
+        <path d="M50 50 L50 95 A45 45 0 0 1 5 50 Z" class="brok-filled"/>
+        <circle cx="50" cy="50" r="45" fill="none" class="brok-ring"/>
+        <line x1="50" y1="50" x2="50" y2="5" class="brok-gridline"/>
+        <line x1="50" y1="50" x2="95" y2="50" class="brok-gridline"/>
+        <line x1="50" y1="50" x2="50" y2="95" class="brok-gridline"/>
+        <line x1="50" y1="50" x2="5" y2="50" class="brok-gridline"/>
+      </svg>
+      <figcaption><strong>3/4</strong></figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 120 36" width="150" aria-hidden="true">
+        <rect x="0" y="4" width="22" height="28" class="brok-filled" rx="3"/>
+        <rect x="24" y="4" width="22" height="28" class="brok-filled" rx="3"/>
+        <rect x="48" y="4" width="22" height="28" class="brok-empty" rx="3"/>
+        <rect x="72" y="4" width="22" height="28" class="brok-empty" rx="3"/>
+        <rect x="96" y="4" width="22" height="28" class="brok-empty" rx="3"/>
+      </svg>
+      <figcaption><strong>2/5</strong></figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-example">
+    <strong>Eksempler fra hverdagen:</strong><br>
+    2 av 8 kakestykker → $\\dfrac{2}{8}$ ·
+    3 av 5 elever → $\\dfrac{3}{5}$ ·
+    halvparten → $\\dfrac{1}{2}$
+  </div>
+  <h5>Viktige begreper</h5>
+  <ul class="brok-list">
+    <li><strong>Ekte brøk</strong> – teller < nevner ($\\frac{2}{5}$)</li>
+    <li><strong>Uekte brøk</strong> – teller ≥ nevner ($\\frac{7}{4}$)</li>
+    <li><strong>Blandet tall</strong> – heltall + brøk ($1\\frac{3}{4}$)</li>
+  </ul>
+</section>
+
+<section class="brok-section" id="brok-grunnregler">
+  <div class="brok-section-head">
+    <div class="brok-num">2</div>
+    <h4>Grunnleggende regler</h4>
+  </div>
+  <h5>A. Utviding</h5>
+  <p>Gange teller og nevner med <strong>samme tall</strong> (verdien endres ikke).</p>
+  <div class="brok-math">$\\dfrac{2}{3} = \\dfrac{2\\cdot 4}{3\\cdot 4} = \\dfrac{8}{12}$</div>
+  <h5>B. Forkorting</h5>
+  <p>Dele teller og nevner på samme tall.</p>
+  <div class="brok-math">$\\dfrac{8}{12} = \\dfrac{8\\div 4}{12\\div 4} = \\dfrac{2}{3}$</div>
+  <div class="brok-box brok-box-tip">
+    <strong>Husk!</strong> Utviding og forkorting endrer bare utseendet, ikke verdien.
+  </div>
+</section>
+
+<section class="brok-section" id="brok-addisjon">
+  <div class="brok-section-head">
+    <div class="brok-num">3</div>
+    <h4>Addisjon og subtraksjon</h4>
+  </div>
+  <p><strong>Regel:</strong> Brøkene må ha <strong>samme nevner</strong>.</p>
+  <h5>Samme nevner</h5>
+  <div class="brok-box brok-box-example">
+    <div class="brok-math">$\\dfrac{2}{5} + \\dfrac{1}{5} = \\dfrac{3}{5}$</div>
+  </div>
+  <h5>Ulik nevner</h5>
+  <ol class="brok-list">
+    <li>Finn fellesnevner</li>
+    <li>Utvid begge brøkene</li>
+    <li>Regn tellerne</li>
+  </ol>
+  <div class="brok-box brok-box-example">
+    <p><strong>$\\frac{1}{3} + \\frac{1}{4}$</strong> (fellesnevner = 12)</p>
+    <div class="brok-math">$\\dfrac{4}{12} + \\dfrac{3}{12} = \\dfrac{7}{12}$</div>
+    <div class="brok-visual">
+      <figure>
+        <svg viewBox="0 0 120 28" width="130" aria-hidden="true">
+          <rect x="0" y="4" width="40" height="20" class="brok-filled" rx="2"/>
+          <rect x="40" y="4" width="40" height="20" class="brok-empty" rx="2"/>
+          <rect x="80" y="4" width="40" height="20" class="brok-empty" rx="2"/>
+        </svg>
+        <figcaption>1/3</figcaption>
+      </figure>
+      <span class="brok-eq">+</span>
+      <figure>
+        <svg viewBox="0 0 120 28" width="130" aria-hidden="true">
+          <rect x="0" y="4" width="30" height="20" class="brok-filled" rx="2"/>
+          <rect x="30" y="4" width="30" height="20" class="brok-empty" rx="2"/>
+          <rect x="60" y="4" width="30" height="20" class="brok-empty" rx="2"/>
+          <rect x="90" y="4" width="30" height="20" class="brok-empty" rx="2"/>
+        </svg>
+        <figcaption>1/4</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="brok-section" id="brok-multiplikasjon">
+  <div class="brok-section-head">
+    <div class="brok-num">4</div>
+    <h4>Multiplikasjon</h4>
+  </div>
+  <p><strong>Regel:</strong> Gang teller med teller og nevner med nevner. Ingen fellesnevner nødvendig.</p>
+  <div class="brok-math">$\\dfrac{a}{b} \\cdot \\dfrac{c}{d} = \\dfrac{ac}{bd}$</div>
+  <div class="brok-box brok-box-example">
+    <div class="brok-math">$\\dfrac{2}{3} \\cdot \\dfrac{4}{5} = \\dfrac{8}{15}$</div>
+    <div class="brok-math">$\\dfrac{3}{4} \\cdot \\dfrac{2}{9} = \\dfrac{1}{6}$</div>
+  </div>
+  <div class="brok-box brok-box-tip">
+    <strong>Tips:</strong> Forkort gjerne på kryss før du ganger – det blir enklere.
+  </div>
+</section>
+
+<section class="brok-section" id="brok-divisjon">
+  <div class="brok-section-head">
+    <div class="brok-num">5</div>
+    <h4>Divisjon</h4>
+  </div>
+  <p><strong>Regel:</strong> Snu den <strong>siste</strong> brøken og bytt til ganging.</p>
+  <div class="brok-math">$\\dfrac{a}{b} : \\dfrac{c}{d} = \\dfrac{a}{b} \\cdot \\dfrac{d}{c}$</div>
+  <div class="brok-box brok-box-example">
+    <div class="brok-math">$\\dfrac{3}{4} : \\dfrac{2}{5} = \\dfrac{3}{4} \\cdot \\dfrac{5}{2} = \\dfrac{15}{8}$</div>
+  </div>
+  <div class="brok-box brok-box-ok">
+    <strong>Hvorfor?</strong> Å dele på en brøk er det samme som å spørre: «Hvor mange ganger går den opp?»
+  </div>
+</section>
+
+<section class="brok-section" id="brok-algebra">
+  <div class="brok-section-head">
+    <div class="brok-num">6</div>
+    <h4>Algebraiske brøker</h4>
+  </div>
+  <p>Samme regler gjelder når vi har bokstaver i stedet for tall.</p>
+  <div class="brok-box brok-box-example">
+    <strong>Multiplikasjon:</strong>
+    <div class="brok-math">$\\dfrac{x}{3} \\cdot \\dfrac{2}{y} = \\dfrac{2x}{3y}$</div>
+  </div>
+  <div class="brok-box brok-box-example">
+    <strong>Addisjon:</strong>
+    <div class="brok-math">$\\dfrac{1}{x} + \\dfrac{2}{y} = \\dfrac{y + 2x}{xy}$</div>
+  </div>
+  <div class="brok-box brok-box-example">
+    <strong>Divisjon:</strong>
+    <div class="brok-math">$\\dfrac{2x}{5} : \\dfrac{y}{3} = \\dfrac{6x}{5y}$</div>
+  </div>
+</section>
+
+<section class="brok-section" id="brok-sjekkliste">
+  <div class="brok-section-head">
+    <div class="brok-num">✓</div>
+    <h4>Hurtigsjekkliste</h4>
+  </div>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead>
+        <tr><th>Operasjon</th><th>Hva gjør du?</th><th>Fellesnevner?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>+ / −</td><td>Finn fellesnevner → utvid → regn</td><td><strong>Ja</strong></td></tr>
+        <tr><td>×</td><td>Gang teller × teller, nevner × nevner</td><td>Nei</td></tr>
+        <tr><td>÷</td><td>Snu siste brøk og gang</td><td>Nei</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`,u=`<p class="brok-lead">Kvadratroten $\\sqrt{a}$ er det positive tallet som ganget med seg selv gir $a$. Trykk på et kort for å hoppe til temaet.</p>
+
+<nav class="brok-overview" aria-label="Hoppe til tema">
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-hva"><span>1</span>Hva er $\\sqrt{\\ }$</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-produkt"><span>2</span>Produkt</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-brok"><span>3</span>Brøk</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-forenkle"><span>4</span>Forenkle</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-like"><span>5</span>Like røtter</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-advarsel"><span>6</span>Ikke gjør</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="rot-sjekkliste"><span>✓</span>Sjekkliste</button>
+</nav>
+
+<section class="brok-section" id="rot-hva">
+  <div class="brok-section-head">
+    <div class="brok-num">1</div>
+    <h4>Hva er en kvadratrot?</h4>
+  </div>
+  <p>Hvis et kvadrat har areal $25$, er sidelengden $\\sqrt{25} = 5$, fordi $5 \\cdot 5 = 25$. Vi bruker alltid den <strong>positive</strong> verdien når vi skriver $\\sqrt{a}$.</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 130 130" width="150" aria-hidden="true">
+        <rect x="8" y="8" width="114" height="114" fill="none" class="brok-ring"/>
+        <g class="brok-filled">
+          <rect x="10" y="10" width="20" height="20"/><rect x="32" y="10" width="20" height="20"/><rect x="54" y="10" width="20" height="20"/><rect x="76" y="10" width="20" height="20"/><rect x="98" y="10" width="20" height="20"/>
+          <rect x="10" y="32" width="20" height="20"/><rect x="32" y="32" width="20" height="20"/><rect x="54" y="32" width="20" height="20"/><rect x="76" y="32" width="20" height="20"/><rect x="98" y="32" width="20" height="20"/>
+          <rect x="10" y="54" width="20" height="20"/><rect x="32" y="54" width="20" height="20"/><rect x="54" y="54" width="20" height="20"/><rect x="76" y="54" width="20" height="20"/><rect x="98" y="54" width="20" height="20"/>
+          <rect x="10" y="76" width="20" height="20"/><rect x="32" y="76" width="20" height="20"/><rect x="54" y="76" width="20" height="20"/><rect x="76" y="76" width="20" height="20"/><rect x="98" y="76" width="20" height="20"/>
+          <rect x="10" y="98" width="20" height="20"/><rect x="32" y="98" width="20" height="20"/><rect x="54" y="98" width="20" height="20"/><rect x="76" y="98" width="20" height="20"/><rect x="98" y="98" width="20" height="20"/>
+        </g>
+      </svg>
+      <figcaption>Areal $25$ → side $\\sqrt{25}=5$</figcaption>
+    </figure>
+    <figure>
+      <svg viewBox="0 0 160 90" width="180" aria-hidden="true">
+        <rect x="8" y="18" width="54" height="54" class="brok-filled" rx="4"/>
+        <text x="35" y="50" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">4</text>
+        <text x="82" y="52" text-anchor="middle" class="rot-svg-text" font-size="18">=</text>
+        <rect x="98" y="18" width="27" height="54" class="brok-accent" rx="3"/>
+        <rect x="127" y="18" width="27" height="54" class="brok-accent" rx="3"/>
+        <text x="126" y="84" text-anchor="middle" class="rot-svg-text" font-size="11">2 + 2</text>
+      </svg>
+      <figcaption>$\\sqrt{4}=2$ fordi $2\\cdot 2=4$</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-example">
+    $\\sqrt{9}=3$, $\\sqrt{16}=4$, $\\sqrt{49}=7$. Og $\\sqrt{1}=1$, $\\sqrt{0}=0$.
+  </div>
+  <div class="brok-box brok-box-tip">
+    <strong>Husk $\\pm$ når du løser likninger:</strong> $x^2 = 9$ gir $x = 3$ <em>eller</em> $x = -3$. Men symbolet $\\sqrt{9}$ betyr bare $3$.
+  </div>
+</section>
+
+<section class="brok-section" id="rot-produkt">
+  <div class="brok-section-head">
+    <div class="brok-num">2</div>
+    <h4>Kvadratrot av et produkt</h4>
+  </div>
+  <p><strong>Regel:</strong> $\\sqrt{a\\cdot b} = \\sqrt{a}\\cdot\\sqrt{b}$ (når $a,b \\ge 0$)</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 70 70" width="70" aria-hidden="true">
+        <rect x="4" y="4" width="28" height="28" class="brok-filled" rx="2"/>
+        <rect x="34" y="4" width="28" height="28" class="brok-filled" rx="2"/>
+        <rect x="4" y="34" width="28" height="28" class="brok-filled" rx="2"/>
+        <rect x="34" y="34" width="28" height="28" class="brok-filled" rx="2"/>
+      </svg>
+      <figcaption>$\\sqrt{4}=2$</figcaption>
+    </figure>
+    <span class="brok-eq">×</span>
+    <figure>
+      <svg viewBox="0 0 70 70" width="78" aria-hidden="true">
+        <rect x="3" y="3" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="25" y="3" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="47" y="3" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="3" y="25" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="25" y="25" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="47" y="25" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="3" y="47" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="25" y="47" width="20" height="20" class="brok-accent" rx="2"/>
+        <rect x="47" y="47" width="20" height="20" class="brok-accent" rx="2"/>
+      </svg>
+      <figcaption>$\\sqrt{9}=3$</figcaption>
+    </figure>
+    <span class="brok-eq">=</span>
+    <figure>
+      <svg viewBox="0 0 80 80" width="96" aria-hidden="true">
+        <rect x="2" y="2" width="76" height="76" fill="none" class="brok-ring"/>
+        <text x="40" y="46" text-anchor="middle" class="rot-svg-text" font-size="16" font-weight="700">36</text>
+      </svg>
+      <figcaption>$\\sqrt{36}=6$</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-example">
+    $\\sqrt{9\\cdot 16} = \\sqrt{9}\\cdot\\sqrt{16} = 3\\cdot 4 = 12$. Sjekk: $9\\cdot 16 = 144$ og $\\sqrt{144}=12$.
+  </div>
+</section>
+
+<section class="brok-section" id="rot-brok">
+  <div class="brok-section-head">
+    <div class="brok-num">3</div>
+    <h4>Kvadratrot av en brøk</h4>
+  </div>
+  <p><strong>Regel:</strong> $\\sqrt{\\dfrac{a}{b}} = \\dfrac{\\sqrt{a}}{\\sqrt{b}}$ (når $a \\ge 0$ og $b > 0$)</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 90 90" width="90" aria-hidden="true">
+        <rect x="8" y="8" width="74" height="74" class="brok-filled" rx="4"/>
+        <text x="45" y="52" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">25</text>
+      </svg>
+      <figcaption>teller $\\sqrt{25}=5$</figcaption>
+    </figure>
+    <span class="brok-eq">/</span>
+    <figure>
+      <svg viewBox="0 0 70 70" width="70" aria-hidden="true">
+        <rect x="8" y="8" width="54" height="54" class="brok-empty" rx="4"/>
+        <rect x="18" y="18" width="34" height="34" class="brok-accent" rx="3"/>
+        <text x="35" y="40" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">4</text>
+      </svg>
+      <figcaption>nevner $\\sqrt{4}=2$</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-example">
+    $\\sqrt{\\dfrac{25}{4}} = \\dfrac{\\sqrt{25}}{\\sqrt{4}} = \\dfrac{5}{2}$
+  </div>
+</section>
+
+<section class="brok-section" id="rot-forenkle">
+  <div class="brok-section-head">
+    <div class="brok-num">4</div>
+    <h4>Forenkle røtter</h4>
+  </div>
+  <p>Når roten ikke er et heltall, trekk ut det største kvadrattallet under rottegnet ($4, 9, 16, 25, \\ldots$).</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 200 90" width="220" aria-hidden="true">
+        <rect x="6" y="18" width="54" height="54" class="brok-filled" rx="3"/>
+        <text x="33" y="50" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">9</text>
+        <text x="72" y="52" class="rot-svg-text" font-size="16">×</text>
+        <rect x="88" y="28" width="34" height="34" class="brok-accent" rx="3"/>
+        <text x="105" y="50" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2</text>
+        <text x="136" y="52" class="rot-svg-text" font-size="16">=</text>
+        <text x="168" y="52" class="rot-svg-text" font-size="16" font-weight="700">18</text>
+      </svg>
+      <figcaption>$18 = 9 \\cdot 2$</figcaption>
+    </figure>
+  </div>
+  <div class="brok-math">$\\sqrt{18} = \\sqrt{9\\cdot 2} = \\sqrt{9}\\cdot\\sqrt{2} = 3\\sqrt{2}$</div>
+  <div class="brok-box brok-box-example">
+    $\\sqrt{50} = \\sqrt{25\\cdot 2} = 5\\sqrt{2}$ ·
+    $\\sqrt{12} = \\sqrt{4\\cdot 3} = 2\\sqrt{3}$ ·
+    $\\sqrt{75} = \\sqrt{25\\cdot 3} = 5\\sqrt{3}$
+  </div>
+  <div class="brok-box brok-box-tip">
+    <strong>Metode:</strong> Primtallsfaktoriser, og trekk ut par. $72 = 2^3\\cdot 3^2 \\Rightarrow \\sqrt{72} = 2\\cdot 3\\sqrt{2} = 6\\sqrt{2}$.
+  </div>
+</section>
+
+<section class="brok-section" id="rot-like">
+  <div class="brok-section-head">
+    <div class="brok-num">5</div>
+    <h4>Like røtter kan trekkes sammen</h4>
+  </div>
+  <p>Røtter med samme tall under rottegnet er like ledd, akkurat som $x$-er.</p>
+  <div class="brok-math">$5\\sqrt{7} - 2\\sqrt{7} + \\sqrt{28} = 5\\sqrt{7} - 2\\sqrt{7} + 2\\sqrt{7} = 5\\sqrt{7}$</div>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 260 56" width="250" aria-hidden="true">
+        <rect x="0" y="10" width="40" height="36" class="brok-filled" rx="4"/>
+        <rect x="44" y="10" width="40" height="36" class="brok-filled" rx="4"/>
+        <rect x="88" y="10" width="40" height="36" class="brok-filled" rx="4"/>
+        <rect x="132" y="10" width="40" height="36" class="brok-filled" rx="4"/>
+        <rect x="176" y="10" width="40" height="36" class="brok-filled" rx="4"/>
+        <text x="220" y="34" class="rot-svg-text" font-size="14">√7</text>
+      </svg>
+      <figcaption>Fem like $\\sqrt{7}$-brikker</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-ok">
+    Først: gjør alle røttene like ($\\sqrt{28}=2\\sqrt{7}$). Deretter: trekk sammen koeffisientene.
+  </div>
+</section>
+
+<section class="brok-section" id="rot-advarsel">
+  <div class="brok-section-head">
+    <div class="brok-num">6</div>
+    <h4>Det du ikke kan gjøre</h4>
+  </div>
+  <p>Du kan <strong>ikke</strong> splitte rot over pluss eller minus:</p>
+  <div class="brok-math">$\\sqrt{a+b} \\neq \\sqrt{a}+\\sqrt{b}$</div>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 90 90" width="90" aria-hidden="true">
+        <rect x="10" y="10" width="70" height="70" class="brok-filled" rx="4"/>
+        <text x="45" y="52" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">25</text>
+      </svg>
+      <figcaption>$\\sqrt{9+16}=\\sqrt{25}=5$</figcaption>
+    </figure>
+    <span class="brok-eq">≠</span>
+    <figure>
+      <svg viewBox="0 0 140 90" width="140" aria-hidden="true">
+        <rect x="8" y="20" width="50" height="50" class="brok-accent" rx="3"/>
+        <text x="33" y="50" text-anchor="middle" fill="#fff" font-size="14">9</text>
+        <rect x="78" y="14" width="56" height="56" class="brok-empty" rx="3"/>
+        <text x="106" y="48" text-anchor="middle" class="rot-svg-text" font-size="14">16</text>
+      </svg>
+      <figcaption>$\\sqrt{9}+\\sqrt{16}=3+4=7$</figcaption>
+    </figure>
+  </div>
+  <div class="brok-box brok-box-tip">
+    $5 \\neq 7$, derfor er splitting over $+$ feil. Samme for minus.
+  </div>
+</section>
+
+<section class="brok-section" id="rot-sjekkliste">
+  <div class="brok-section-head">
+    <div class="brok-num">✓</div>
+    <h4>Hurtigsjekkliste</h4>
+  </div>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead>
+        <tr><th>Operasjon</th><th>Regel</th><th>OK?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$\\sqrt{ab}$</td><td>$\\sqrt{a}\\cdot\\sqrt{b}$</td><td><strong>Ja</strong></td></tr>
+        <tr><td>$\\sqrt{a/b}$</td><td>$\\sqrt{a}/\\sqrt{b}$</td><td><strong>Ja</strong></td></tr>
+        <tr><td>Forenkle</td><td>Trekk ut kvadrattall</td><td><strong>Ja</strong></td></tr>
+        <tr><td>Like røtter</td><td>Trekk sammen koeffisienter</td><td><strong>Ja</strong></td></tr>
+        <tr><td>$\\sqrt{a+b}$</td><td>Ikke splitte</td><td>Nei</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+`,d=`<p class="brok-lead">Dette er en innføring i programmering fra null. Du trenger ikke kunne kode fra før. Les kortene i rekkefølge, og prøv eksemplene i kodeskriveren nederst — og i oppgavene under fanen Programmering.</p>
+
+<nav class="brok-overview" aria-label="Hoppe til tema">
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-start"><span>1</span>Hva er det?</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-print"><span>2</span>print</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-var"><span>3</span>Variabler</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-if"><span>4</span>if / else</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-for"><span>5</span>Løkker</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-feil"><span>6</span>Feil</button>
+  <button type="button" class="brok-nav-card" data-fag-scroll="prog-sjekkliste"><span>✓</span>Sjekkliste</button>
+</nav>
+
+<section class="brok-section" id="prog-start">
+  <div class="brok-section-head">
+    <div class="brok-num">1</div>
+    <h4>Hva er programmering?</h4>
+  </div>
+  <p>Et <strong>program</strong> er en oppskrift. Du skriver instruksjoner, og datamaskinen utfører dem <em>nøyaktig</em> i den rekkefølgen du har skrevet — linje for linje, ovenfra og ned.</p>
+  <p>Forskjellen fra en matoppskrift: datamaskinen gjetter aldri. Glemmer du et komma, eller skriver <code>Print</code> i stedet for <code>print</code>, stopper den og sier ifra. Det er ikke «dumt» — det betyr at språket er strengt, så vi kan stole på det.</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 240 150" width="240" aria-hidden="true">
+        <rect x="20" y="8" width="200" height="26" class="brok-filled" rx="6"/>
+        <text x="120" y="26" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Du skriver koden</text>
+        <path d="M120 34 L120 48" class="brok-gridline"/>
+        <rect x="20" y="48" width="200" height="26" class="brok-accent" rx="6"/>
+        <text x="120" y="66" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Python oversetter</text>
+        <path d="M120 74 L120 88" class="brok-gridline"/>
+        <rect x="20" y="88" width="200" height="26" rx="6" class="brok-empty"/>
+        <text x="120" y="106" text-anchor="middle" class="rot-svg-text" font-size="12" font-weight="700">Datamaskinen utfører</text>
+        <path d="M120 114 L120 128" class="brok-gridline"/>
+        <text x="120" y="144" text-anchor="middle" class="rot-svg-text" font-size="12">Utskrift / svar på skjermen</text>
+      </svg>
+      <figcaption>Fra tekst du skriver, til noe som skjer</figcaption>
+    </figure>
+  </div>
+  <h5>Hvorfor Python?</h5>
+  <p>I 1T bruker vi språket <strong>Python</strong>. Det er laget for å være lesbart: <code>print("Hei")</code> betyr akkurat «skriv ut Hei». Samme ideer (variabler, if, løkker) finnes i andre språk, så det du lærer her, tar du med deg videre.</p>
+  <div class="brok-box brok-box-example">
+    <strong>Tre regler å ha i bakhodet:</strong>
+    <ol class="brok-list">
+      <li>Koden kjører <strong>ovenfra og ned</strong>, én linje om gangen.</li>
+      <li>Python skiller på store og små bokstaver. <code>Print</code> er ikke det samme som <code>print</code>.</li>
+      <li><strong>Innrykk</strong> (mellomrom foran linjen) viser hva som hører sammen. Vanligvis 4 mellomrom.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="brok-section" id="prog-print">
+  <div class="brok-section-head">
+    <div class="brok-num">2</div>
+    <h4>print — vis noe på skjermen</h4>
+  </div>
+  <p><code>print</code> er den første kommandoen du trenger. Den tar det som står i parentesen og viser det som <strong>utskrift</strong>.</p>
+  <pre class="prog-code"><code>print("Hei, 1T!")
+print(2 + 5)</code></pre>
+  <p>Hermetegn <code>" "</code> (eller <code>' '</code>) betyr <strong>tekst</strong>. Python skal ikke regne på teksten, bare vise den. Uten hermetegn betyr det et <strong>regnestykke</strong> eller et <strong>navn</strong> (en variabel).</p>
+  <div class="brok-box brok-box-example">
+    <code>print("2+5")</code> skriver bokstavelig <code>2+5</code>.<br>
+    <code>print(2+5)</code> regner først, og skriver <code>7</code>.
+  </div>
+  <div class="brok-box brok-box-tip">
+    <strong>Vanlig nybegynnerfeil:</strong> <code>print(Hei)</code> uten hermetegn. Da leter Python etter en variabel som heter Hei. Finnes den ikke, får du <code>NameError</code>.
+  </div>
+</section>
+
+<section class="brok-section" id="prog-var">
+  <div class="brok-section-head">
+    <div class="brok-num">3</div>
+    <h4>Variabler, typer og input</h4>
+  </div>
+  <p>En <strong>variabel</strong> er en merkelapp på en verdi. Tenk en eske med navn på. Du putter noe i esken med <code>=</code>, og henter det frem ved å bruke navnet.</p>
+  <pre class="prog-code"><code>navn = "Nora"
+alder = 16
+print(navn)
+print(alder + 1)</code></pre>
+  <p>Etter første linje inneholder esken <code>navn</code> teksten Nora. Etter andre linje inneholder <code>alder</code> tallet 16. Siste linje skriver 17 — vi endrer ikke esken, vi bare bruker verdien i et regnestykke.</p>
+  <h5>Ulike typer verdier</h5>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead><tr><th>Type</th><th>Eksempel</th><th>Når bruker du den?</th></tr></thead>
+      <tbody>
+        <tr><td><code>int</code></td><td><code>7</code></td><td>Hele tall (antall, alder)</td></tr>
+        <tr><td><code>float</code></td><td><code>3.5</code></td><td>Desimaltall (mål, gjennomsnitt)</td></tr>
+        <tr><td><code>str</code></td><td><code>"hei"</code></td><td>Tekst</td></tr>
+        <tr><td><code>bool</code></td><td><code>True</code> / <code>False</code></td><td>Sant eller usant (vilkår)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h5>Regneoperatorer</h5>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead><tr><th>Tegn</th><th>Betydning</th><th>Eksempel</th></tr></thead>
+      <tbody>
+        <tr><td><code>+</code> <code>-</code> <code>*</code> <code>/</code></td><td>pluss, minus, gange, dele</td><td><code>8 / 2</code> → <code>4.0</code></td></tr>
+        <tr><td><code>**</code></td><td>potens</td><td><code>2 ** 5</code> → <code>32</code></td></tr>
+        <tr><td><code>//</code></td><td>heltallsdivisjon</td><td><code>17 // 5</code> → <code>3</code></td></tr>
+        <tr><td><code>%</code></td><td>rest (modulo)</td><td><code>17 % 5</code> → <code>2</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><code>%</code> er viktig: <code>n % 2 == 0</code> betyr «n er partall» (ingen rest når du deler på 2).</p>
+  <h5>input — spør brukeren</h5>
+  <p><code>input()</code> leser det noen skriver, men svaret er <strong>alltid tekst</strong>. Skal du regne med tallet, pakk det inn i <code>int()</code> eller <code>float()</code>.</p>
+  <pre class="prog-code"><code>n = int(input("Skriv et tall: "))
+print(n * 2)</code></pre>
+  <div class="brok-box brok-box-tip">
+    Uten <code>int</code>: <code>"4" * 2</code> blir <code>"44"</code> (tekst gjentas), ikke 8. Det er derfor P.04 i oppgavene er en klassisk felle.
+  </div>
+  <h5>f-streng — sette verdier inn i tekst</h5>
+  <pre class="prog-code"><code>navn = "Mats"
+print(f"Jeg heter {navn}.")</code></pre>
+  <p>Bokstaven <code>f</code> foran hermetegnene betyr at <code>{navn}</code> byttes ut med innholdet i variabelen.</p>
+</section>
+
+<section class="brok-section" id="prog-if">
+  <div class="brok-section-head">
+    <div class="brok-num">4</div>
+    <h4>Vilkår: if, elif og else</h4>
+  </div>
+  <p>Et <strong>vilkår</strong> er et spørsmål med ja/nei-svar: «Er alderen minst 18?» I koden skriver vi det med sammenligninger. Svaret er <code>True</code> (sant) eller <code>False</code> (usant).</p>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead><tr><th>Skriv</th><th>Betyr</th></tr></thead>
+      <tbody>
+        <tr><td><code>==</code></td><td>er lik (to likhetstegn! Ett <code>=</code> betyr «lagre i variabel»)</td></tr>
+        <tr><td><code>!=</code></td><td>er ikke lik</td></tr>
+        <tr><td><code><</code> <code><=</code> <code>></code> <code>>=</code></td><td>mindre / minst / større / høyst</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><code>if</code> kjører koden under <strong>bare hvis</strong> vilkåret er sant. <code>else</code> er «ellers». <code>elif</code> («else if») er neste spørsmål, hvis det første var usant.</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 260 170" width="260" aria-hidden="true">
+        <rect x="70" y="8" width="120" height="28" class="brok-filled" rx="6"/>
+        <text x="130" y="27" text-anchor="middle" fill="#fff" font-size="12">if poeng ≥ 90</text>
+        <path d="M130 36 L130 48 M130 48 L90 48 L90 58 M130 48 L170 48 L170 58" class="brok-gridline"/>
+        <rect x="20" y="58" width="90" height="28" class="brok-accent" rx="6"/>
+        <text x="65" y="77" text-anchor="middle" fill="#fff" font-size="11">sant → A</text>
+        <rect x="150" y="58" width="90" height="28" rx="6" class="brok-empty"/>
+        <text x="195" y="77" text-anchor="middle" class="rot-svg-text" font-size="11">usant → elif</text>
+        <path d="M195 86 L195 100" class="brok-gridline"/>
+        <rect x="140" y="100" width="110" height="28" class="brok-filled" rx="6"/>
+        <text x="195" y="119" text-anchor="middle" fill="#fff" font-size="11">elif ≥ 80 → B</text>
+        <path d="M195 128 L195 142" class="brok-gridline"/>
+        <rect x="140" y="142" width="110" height="24" rx="6" class="brok-empty"/>
+        <text x="195" y="158" text-anchor="middle" class="rot-svg-text" font-size="11">else → C</text>
+      </svg>
+      <figcaption>Python tar første treff og hopper over resten</figcaption>
+    </figure>
+  </div>
+  <pre class="prog-code"><code>poeng = 85
+if poeng >= 90:
+    print("A")
+elif poeng >= 80:
+    print("B")
+else:
+    print("C eller lavere")</code></pre>
+  <p>Her er 85 ikke ≥ 90, men ≥ 80, så utskriften blir <code>B</code>. Rekkefølgen er viktig: sjekk den <strong>strengeste</strong> grensen først (90 før 80). Ellers ville 95 også truffet «minst 80».</p>
+  <div class="brok-box brok-box-ok">
+    <strong>Innrykk er selve blokken.</strong> Alt som er rykket inn under <code>if</code>, hører til den. Linjer uten innrykk kjører alltid, etterpå.
+  </div>
+</section>
+
+<section class="brok-section" id="prog-for">
+  <div class="brok-section-head">
+    <div class="brok-num">5</div>
+    <h4>Løkker: for og while</h4>
+  </div>
+  <p>En <strong>løkke</strong> gjentar de samme linjene flere ganger, så du slipper å kopiere kode.</p>
+  <h5>for — kjent antall ganger</h5>
+  <p><code>range(5)</code> gir tallene 0, 1, 2, 3, 4 (fem tall, starter på 0). <code>range(1, 6)</code> gir 1 til 5 — stopptallet er <em>ikke</em> med.</p>
+  <div class="brok-visual">
+    <figure>
+      <svg viewBox="0 0 240 70" width="240" aria-hidden="true">
+        <rect x="8" y="18" width="40" height="36" class="brok-filled" rx="4"/><text x="28" y="41" text-anchor="middle" fill="#fff" font-size="12">0</text>
+        <rect x="56" y="18" width="40" height="36" class="brok-filled" rx="4"/><text x="76" y="41" text-anchor="middle" fill="#fff" font-size="12">1</text>
+        <rect x="104" y="18" width="40" height="36" class="brok-filled" rx="4"/><text x="124" y="41" text-anchor="middle" fill="#fff" font-size="12">2</text>
+        <rect x="152" y="18" width="40" height="36" class="brok-empty" rx="4"/><text x="172" y="41" text-anchor="middle" class="rot-svg-text" font-size="12">3</text>
+        <rect x="200" y="18" width="32" height="36" class="brok-empty" rx="4"/><text x="216" y="41" text-anchor="middle" class="rot-svg-text" font-size="12">…</text>
+      </svg>
+      <figcaption>Én runde per verdi i range</figcaption>
+    </figure>
+  </div>
+  <pre class="prog-code"><code>for i in range(1, 6):
+    print(i * i)</code></pre>
+  <p>Dette skriver kvadrattallene 1, 4, 9, 16, 25. Variabelen <code>i</code> får en ny verdi hver runde.</p>
+  <h5>while — så lenge noe er sant</h5>
+  <p>Bruk <code>while</code> når du ikke vet på forhånd hvor mange runder det blir: «fortsett til saldoen er minst 500».</p>
+  <pre class="prog-code"><code>n = 3
+while n > 0:
+    print(n)
+    n = n - 1</code></pre>
+  <p>Første runde: n er 3 (sant, skriv 3, trekk fra 1). Så 2, så 1. Når n blir 0, er vilkåret usant, og løkken stopper.</p>
+  <div class="brok-box brok-box-tip">
+    <strong>Evig løkke:</strong> Glemmer du å endre <code>n</code> inni løkken, blir vilkåret alltid sant. Programmet henger. Stopp og rett koden. I kodeskriveren her stoppes lange kjøringer automatisk.
+  </div>
+  <h5>Løkke + if</h5>
+  <p>Inne i en løkke kan du stille spørsmål til hvert tall:</p>
+  <pre class="prog-code"><code>for n in range(1, 8):
+    if n % 2 == 0:
+        print(n)</code></pre>
+  <p>Skriver partallene 2, 4, 6.</p>
+</section>
+
+<section class="brok-section" id="prog-feil">
+  <div class="brok-section-head">
+    <div class="brok-num">6</div>
+    <h4>Når noe går galt</h4>
+  </div>
+  <p>Feilmeldinger er hjelp, ikke straff. Les den nederste linjen først.</p>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead><tr><th>Melding</th><th>Typisk årsak</th></tr></thead>
+      <tbody>
+        <tr><td><code>SyntaxError</code></td><td>Skrivefeil: glemt kolon etter <code>if</code>, glemt parentes, feil innrykk</td></tr>
+        <tr><td><code>NameError</code></td><td>Navn som ikke finnes — ofte glemt hermetegn, eller variabelen er ikke laget ennå</td></tr>
+        <tr><td><code>TypeError</code></td><td>Feil type, f.eks. å plusse tall med tekst uten å konvertere</td></tr>
+        <tr><td><code>IndentationError</code></td><td>Innrykk som ikke stemmer (miks av tab og mellomrom, eller glemt innrykk)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="brok-box brok-box-example">
+    <strong>Sjekkliste når koden ikke kjører:</strong> kolon etter <code>if</code>/<code>for</code>/<code>while</code>? Fire mellomrom på linjene inni? Hermetegn i par? <code>==</code> når du sammenligner?
+  </div>
+</section>
+
+<section class="brok-section" id="prog-sjekkliste">
+  <div class="brok-section-head">
+    <div class="brok-num">✓</div>
+    <h4>Hurtigsjekkliste</h4>
+  </div>
+  <div class="brok-table-wrap">
+    <table class="brok-table">
+      <thead><tr><th>Du vil …</th><th>Bruk</th></tr></thead>
+      <tbody>
+        <tr><td>Vise noe på skjermen</td><td><code>print(...)</code></td></tr>
+        <tr><td>Lagre en verdi</td><td><code>x = 7</code></td></tr>
+        <tr><td>Regne med det brukeren skriver</td><td><code>int(input(...))</code></td></tr>
+        <tr><td>Ett vilkår</td><td><code>if</code> / <code>else</code></td></tr>
+        <tr><td>Flere vilkår</td><td><code>if</code> / <code>elif</code> / <code>else</code></td></tr>
+        <tr><td>Kjent antall ganger</td><td><code>for ... in range(...)</code></td></tr>
+        <tr><td>Så lenge noe er sant</td><td><code>while</code></td></tr>
+        <tr><td>Er n partall?</td><td><code>n % 2 == 0</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="brok-box brok-box-ok">
+    Oppgavene under <strong>Programmering</strong> følger denne rekkefølgen. Hver oppgave har et <strong>kodeskriver</strong> der du kan kjøre Python rett i nettleseren.
+  </div>
+  <h5>Prøv selv her</h5>
+  <p>Skriv Python under og trykk Kjør. Første gang lastes Python — det kan ta noen sekunder.</p>
+  <div class="py-play" data-play-id="fag-prog-try">
+    <div class="py-play-bar">
+      <span class="py-play-label">Kodeskriver · Python</span>
+      <button type="button" class="hint-btn py-run-btn" data-run="fag-prog-try">Kjør ▶</button>
+    </div>
+    <textarea id="fag-prog-try-code" class="py-code" spellcheck="false" autocapitalize="off">print("Hei, 1T!")
+print(2 + 5)</textarea>
+    <pre id="fag-prog-try-out" class="py-out">Trykk Kjør for å se utskrift.</pre>
+  </div>
+</section>
+`,f=e.map(e=>{let t=e.delkapitler.map(e=>({...e,tittel:a[e.id]||e.tittel,oppgaver:[...e.oppgaver,...(i[e.id]||[]).map((e,t,n)=>{if(/^\d+\.\d+$/.test(e.id)&&e.id.startsWith(`1.`))return e;if(/^\d+\.\d+$/.test(e.id))return{...e,tittel:`Ekstraøving ${t+1}`};let r=n.slice(0,t+1).filter(e=>!/^\d+\.\d+$/.test(e.id)).length;return{...e,tittel:`Ekstraøving ${r}`}})]}));return e.id===`kap3`?{...e,delkapitler:[...t,s]}:{...e,delkapitler:t}}),p=t.map(e=>{let t={tallmengder:c,brokregning:l,kvadratrotter:u,programmering:d};return t[e.id]?{...e,html:t[e.id],src:void 0}:e}),m=n,h={kap1:{short:`Tallforståelse og algebra`,blurb:`Tallmengder, potenser, standardform og logikk`,image:`/images/kap1.jpg`,tint:`#818cf8`},kap2:{short:`Algebra og mønstre`,blurb:`Kvadratsetninger, faktorisering og rasjonale uttrykk`,image:`/images/kap2.jpg`,tint:`#34d399`},kap3:{short:`Likninger og ulikheter`,blurb:`Likninger, ulikheter og polynomdivisjon`,image:`/images/kap3.jpg`,tint:`#f59e0b`},kap4:{short:`Funksjoner`,blurb:`Funksjoner, derivasjon og funksjonsdrøfting`,image:`/images/kap4.jpg`,tint:`#a78bfa`}},g={"1A":[{tittel:`Regnerekkefølge og parenteser`,url:`https://www.youtube.com/watch?v=HCvi7QZBoGE`},{tittel:`Tallmengder og intervaller`,url:`https://www.youtube.com/watch?v=4ey3raG716U`}],"1B":[{tittel:`Figurtall og mønstre`,url:`https://www.youtube.com/watch?v=Pm1Z8GJFqPw`}],"1C":[{tittel:`Primtall og faktorisering`,url:`https://www.youtube.com/watch?v=iMmTOV6rKqg`},{tittel:`Brøkregning`,url:`https://www.youtube.com/watch?v=2foqFiSTRPc`}],"1D":[{tittel:`Potenser`,url:`https://www.youtube.com/watch?v=daQqN2aB7is`}],"1E":[{tittel:`Kvadratrøtter`,url:`https://www.youtube.com/watch?v=NRx60-H6ZY0`},{tittel:`Standardform`,url:`https://www.youtube.com/watch?v=SSb_IddmrdE`}],"1F":[{tittel:`Implikasjon og ekvivalens`,url:`https://www.youtube.com/watch?v=lnB4y3IyCRQ`}]};function _(e){return f.find(t=>t.id===e)}function v(e,t){return _(e)?.delkapitler.find(e=>e.id===t)}var y={34:{kapId:null,subId:null,tekst:`Uke 34 — Tirsdag: grilling og oppstart. Torsdag: Strandheim.`},35:{kapId:`kap1`,subId:`1A`,tekst:`Uke 35 — Tirsdag: kapittel 1A. Torsdag: 1B/1D.`},36:{kapId:`kap1`,subId:`1E`,tekst:`Uke 36 — Tirsdag: Osloprøve. Torsdag: kapittel 1E.`},37:{kapId:`kap2`,subId:`2B`,tekst:`Uke 37 — Tirsdag: kapittel 2B. Torsdag: 2C.`},38:{kapId:`kap2`,subId:`2D`,tekst:`Uke 38 — Tirsdag: kapittel 2D. Torsdag: 2E/F.`},39:{kapId:`kap2`,subId:`2F`,tekst:`Uke 39 — Tirsdag: kapittel 2F. Torsdag: prøve.`},40:{kapId:null,subId:null,tekst:`Uke 40 — Høstferie. Lad batteriene.`}};export{p as a,m as c,f as i,y as n,_ as o,g as r,v as s,h as t};
