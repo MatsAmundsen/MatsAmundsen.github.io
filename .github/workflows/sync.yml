@@ -24,8 +24,8 @@ jobs:
       - name: Bygg og publiser
         run: |
           cd src
-          node build.js
-          node scripts/prepare-dist.js
+          node --experimental-default-type=commonjs build.js
+          node --experimental-default-type=commonjs scripts/prepare-dist.js
           rsync -a --delete --exclude .git --exclude .github dist/ ../site/
           touch ../site/.nojekyll
           cd ../site
