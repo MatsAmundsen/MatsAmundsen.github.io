@@ -1,7 +1,7 @@
 /* Matteguiden: do not cache, and NEVER reload the page.
    An older build called clients.navigate() here, which made the
-   site blink forever. This worker only clears leftover caches
-   and then uninstalls itself. */
+   preview (and Live) blink forever. This worker only clears leftover
+   caches and then uninstalls itself. */
 self.addEventListener("install", function () {
   self.skipWaiting();
 });
