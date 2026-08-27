@@ -40,6 +40,8 @@ jobs:
           test -f .output/public/index.html
           grep -q "hero-wrap" .output/public/index.html
           grep -q "mg-build" .output/public/index.html
+          test -f .output/public/version.json
+          test -f .output/public/app.js
 
       - name: Publiser til github.io
         run: |
@@ -54,6 +56,13 @@ jobs:
           if [ ! -f live/realfag/index.html ]; then
             printf '%s\n' '<!DOCTYPE html><meta http-equiv="refresh" content="0;url=/"><script>location.replace("/")</script>' > live/realfag/index.html
           fi
+          VERSION=$(python3 -c "import json; print(json.load(open('live/version.json'))['version'])")
+          mkdir -p "live/b/${VERSION}"
+          cp -f live/app.js live/data.js live/style.css "live/b/${VERSION}/"
+          # pek også siste b/current mot samme filer
+          mkdir -p live/b/current
+          cp -f live/app.js live/data.js live/style.css live/b/current/
+          echo "Publisert versjon ${VERSION} til / og b/${VERSION}/"
           cd live
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -62,5 +71,5 @@ jobs:
             echo "Ingen endringer"
             exit 0
           fi
-          git commit -m "Deploy Matteguiden fra realfag $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "Deploy Matteguiden ${VERSION} $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
