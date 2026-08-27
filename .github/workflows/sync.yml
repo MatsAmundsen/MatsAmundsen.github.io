@@ -63,6 +63,7 @@ jobs:
           mkdir -p live/b/current
           cp -f live/app.js live/data.js live/style.css live/b/current/
           echo "Publisert versjon ${VERSION} til / og b/${VERSION}/"
+          printf '%s\n' 'matteguiden.no' > live/CNAME
           cd live
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
